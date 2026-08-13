@@ -1,8 +1,8 @@
-\# Microsoft Intune \& Entra ID Hybrid Endpoint Management Lab
+# Microsoft Intune & Entra ID Hybrid Endpoint Management Lab
 
 
 
-\*\*Mohammed Thousif Raza\*\*
+**Mohammed Thousif Raza**
 
 
 
@@ -18,11 +18,11 @@ The screenshots and device-side tests are the main evidence for the project. I u
 
 
 
-\---
+---
 
 
 
-\## Project Overview
+## Project Overview
 
 
 
@@ -34,69 +34,69 @@ The main flow of the lab was:
 
 Windows Server 2022 / Active Directory
 
-&#x20;               |
+               |
 
-&#x20;               v
+               v
 
-&#x20;       Microsoft Entra Connect
+       Microsoft Entra Connect
 
-&#x20;               |
+               |
 
-&#x20;               v
+               v
 
-&#x20;       Microsoft Entra ID
+       Microsoft Entra ID
 
-&#x20;               |
+               |
 
-&#x20;               v
+               v
 
-&#x20;  Hybrid Microsoft Entra Join
+  Hybrid Microsoft Entra Join
 
-&#x20;               |
+               |
 
-&#x20;               v
+               v
 
-&#x20;      Microsoft Intune MDM
+      Microsoft Intune MDM
 
-&#x20;               |
+               |
 
-&#x20;       +-------+--------+
+       +-------+--------+
 
-&#x20;       |                |
+       |                |
 
-&#x20;       v                v
+       v                v
 
-&#x20;  Windows 11       Android Enterprise
+  Windows 11       Android Enterprise
 
-&#x20;  WIN11-CLIENT01    Work Profile
+  WIN11-CLIENT01    Work Profile
 
-&#x20;       |                |
+       |                |
 
-&#x20;       v                v
+       v                v
 
-&#x20;Security /          Compliance /
+  Security          Compliance 
 
-&#x20;BitLocker           Conditional Access
+  BitLocker         Conditional Access
 
-&#x20;Compliance               |
+  Compliance            |
 
-&#x20;       |                v
+       |                v
 
-&#x20;       v          Managed Applications
+       v          Managed Applications
 
-&#x20;Conditional Access      |
+Conditional Access      |
 
-&#x20;       |                v
+       |                v
 
-&#x20;       v          Android App Protection
+       v          Android App Protection
 
-&#x20;Win32 App Deployment
+Win32 App Deployment
 
-&#x20;       |
+       |
 
-&#x20;       v
+       v
 
-&#x20;Windows BYOD / MAM
+Windows BYOD / MAM
 
 ```
 
@@ -106,11 +106,11 @@ This is a homelab and test environment, not a production tenant. I used it to bu
 
 
 
-\---
+---
 
 
 
-\# Architecture Diagrams
+# Architecture Diagrams
 
 
 
@@ -118,7 +118,7 @@ The repository contains four architecture diagrams. Each diagram covers a differ
 
 
 
-\## 1. Identity \& Hybrid Management
+## 1. Identity & Hybrid Management
 
 
 
@@ -126,11 +126,11 @@ This diagram shows the on-premises Active Directory environment, UPN alignment, 
 
 
 
-!\[Identity \& Hybrid Management](./Architecture%20Diagrams/Identity%20%26%20Hybrid%20Management%20Diagram%283%29.png)
+![Identity & Hybrid Management](./Architecture%20Diagrams/01_Identity_and_Hybrid_Management.png)
 
 
 
-\## 2. Windows Endpoint Management
+## 2. Windows Endpoint Management
 
 
 
@@ -138,11 +138,11 @@ This diagram covers Windows enrollment, Intune management, configuration, BitLoc
 
 
 
-!\[Windows Endpoint Management](./Architecture%20Diagrams/Windows%20Endpoint%20Management%20Dashboard%282%29.png)
+![Windows Endpoint Management](./Architecture%20Diagrams/02_Windows_Endpoint_Management.png)
 
 
 
-\## 3. Android Enterprise \& Device Management
+## 3. Android Enterprise & Device Management
 
 
 
@@ -150,11 +150,11 @@ This diagram shows the Android Enterprise Work Profile flow from Managed Google 
 
 
 
-!\[Android Enterprise \& Device Management](./Architecture%20Diagrams/Android%20Enterprise%20Device%20Management%20Overview.png)
+![Android Enterprise & Device Management](./Architecture%20Diagrams/03_Android_Enterprise_and_Device_Management.png)
 
 
 
-\## 4. Android App Protection (MAM)
+## 4. Android App Protection (MAM)
 
 
 
@@ -162,21 +162,20 @@ This diagram covers Android App Protection, including application access, data p
 
 
 
-!\[Android App Protection](./Architecture%20Diagrams/Android%20App%20Protection%20Policy%20Overview.png)
+![Android App Protection](./Architecture%20Diagrams/04_Android_App_Protection_MAM.png)
 
 
 
-\---
+---
 
 
 
-\# Lab Environment
+# Lab Environment
 
 
 
 | Component | Details |
-
-|---|---|
+|--------------|--------|
 
 | Hypervisor | VMware Workstation Pro |
 
@@ -214,7 +213,7 @@ The main Android device used during the Android section was:
 
 
 
-`areddy\_AndroidForWork\_8/10/2026\_2:18 PM`
+`areddy_AndroidForWork_8/10/2026_2:18 PM`
 
 
 
@@ -222,61 +221,61 @@ The device was a personally owned OnePlus CPH2447 running Android 16.
 
 
 
-\---
+---
 
 
 
-\# Technologies Used
+# Technologies Used
 
 
 
-\- Windows Server 2022
+- Windows Server 2022
 
-\- Active Directory Domain Services
+- Active Directory Domain Services
 
-\- DNS
+- DNS
 
-\- DHCP
+- DHCP
 
-\- Group Policy
+- Group Policy
 
-\- Microsoft Entra ID
+- Microsoft Entra ID
 
-\- Microsoft Entra Connect
+- Microsoft Entra Connect
 
-\- Password Hash Synchronization
+- Password Hash Synchronization
 
-\- Microsoft Intune
+- Microsoft Intune
 
-\- Microsoft 365
+- Microsoft 365
 
-\- Windows 11 Pro
+- Windows 11 Pro
 
-\- Windows Endpoint Security
+- Windows Endpoint Security
 
-\- BitLocker
+- BitLocker
 
-\- Microsoft Entra Conditional Access
+- Microsoft Entra Conditional Access
 
-\- Android Enterprise
+- Android Enterprise
 
-\- Managed Google Play
+- Managed Google Play
 
-\- Intune App Protection
+- Intune App Protection
 
-\- PowerShell
+- PowerShell
 
-\- VMware Workstation Pro
+- VMware Workstation Pro
 
-\- Win32 Content Prep Tool
-
-
-
-\---
+- Win32 Content Prep Tool
 
 
 
-\# 01 - Identity \& Active Directory
+---
+
+
+
+# 01 - Identity & Active Directory
 
 
 
@@ -336,11 +335,11 @@ This was done so that the on-premises identity and Microsoft Entra identity used
 
 
 
-\---
+---
 
 
 
-\# 02 - Entra Connect \& SSO
+# 02 - Entra Connect & SSO
 
 
 
@@ -402,7 +401,7 @@ KeySignTest   : PASSED
 
 
 
-!\[Hybrid Join and PRT Verification](./Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success%281%29.png)
+![Hybrid Join and PRT Verification](./Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success.png)
 
 
 
@@ -410,11 +409,11 @@ The `dsregcmd` output was useful because it showed the connection between the lo
 
 
 
-\---
+---
 
 
 
-\# 03 - Intune Enrollment \& Management
+# 03 - Intune Enrollment & Management
 
 
 
@@ -438,7 +437,7 @@ The enrollment process was verified from the Intune side and from the Windows cl
 
 
 
-!\[WIN11-CLIENT01 in Intune](./Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device%281%29.png)
+![WIN11-CLIENT01 in Intune](./Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device.png)
 
 
 
@@ -454,27 +453,27 @@ The main management stages were:
 
 Hybrid Microsoft Entra Join
 
-&#x20;       ↓
+       ↓
 
 Intune Enrollment
 
-&#x20;       ↓
+       ↓
 
 Configuration
 
-&#x20;       ↓
+       ↓
 
 Security
 
-&#x20;       ↓
+       ↓
 
 Compliance
 
-&#x20;       ↓
+       ↓
 
 Conditional Access
 
-&#x20;       ↓
+       ↓
 
 Application Deployment
 
@@ -482,11 +481,11 @@ Application Deployment
 
 
 
-\---
+---
 
 
 
-\# 04 - Endpoint Security \& Firewall
+# 04 - Endpoint Security & Firewall
 
 
 
@@ -498,15 +497,15 @@ The Windows endpoint was used to test controls such as:
 
 
 
-\- Microsoft Defender configuration
+- Microsoft Defender configuration
 
-\- SmartScreen
+- SmartScreen
 
-\- Firewall profiles
+- Firewall profiles
 
-\- Device security settings
+- Device security settings
 
-\- Endpoint management controls
+- Endpoint management controls
 
 
 
@@ -530,11 +529,11 @@ This was done deliberately to create a controlled noncompliant state.
 
 
 
-\---
+---
 
 
 
-\# 05 - BitLocker Device Encryption
+# 05 - BitLocker Device Encryption
 
 
 
@@ -558,7 +557,7 @@ The final encryption state was verified on the client.
 
 
 
-!\[BitLocker Final Status](./Screenshots/05%20-%20BitLocker%20Device%20Encryption/40-BitLocker%20Final%20Status%281%29.png)
+![BitLocker Final Status](./Screenshots/05%20-%20BitLocker%20Device%20Encryption/06%20-%20Final%20Verification/43-BitLocker%20Control%20Panel%20On.png)
 
 
 
@@ -566,11 +565,11 @@ The important part of this test was seeing the difference between the management
 
 
 
-\---
+---
 
 
 
-\# 06 - Compliance
+# 06 - Compliance
 
 
 
@@ -598,11 +597,11 @@ This made it possible to test the relationship between:
 
 Device configuration
 
-&#x20;       ↓
+       ↓
 
 Device compliance
 
-&#x20;       ↓
+       ↓
 
 Conditional Access
 
@@ -610,11 +609,11 @@ Conditional Access
 
 
 
-\---
+---
 
 
 
-\# 07 - Conditional Access
+# 07 - Conditional Access
 
 
 
@@ -630,7 +629,7 @@ The policy used in the lab was:
 
 
 
-The policy was configured in \*\*Report-only\*\* mode.
+The policy was configured in **Report-only** mode.
 
 
 
@@ -638,21 +637,21 @@ The policy targeted:
 
 
 
-\- \*\*Users, agents or workload identities:\*\* 1 group
+- **Users, agents or workload identities:** 1 group
 
-\- \*\*Excluded identities:\*\* 0 users, 0 groups, 0 roles
+- **Excluded identities:** 0 users, 0 groups, 0 roles
 
-\- \*\*Included resources:\*\* All resources
+- **Included resources:** All resources
 
-\- \*\*Device platform:\*\* Windows
+- **Device platform:** Windows
 
-\- \*\*Requirement for access:\*\* Require device to be marked as compliant
+- **Requirement for access:** Require device to be marked as compliant
 
-\- \*\*Client apps:\*\* 1 included
+- **Client apps:** 1 included
 
 
 
-!\[Conditional Access Policy Configuration](./Screenshots/07%20-%20Conditional%20Access/01%20-%20Policy%20Configuration/49-Conditional%20Access%20Policy%20Configuration.png)
+![Conditional Access Policy Configuration](./Screenshots/07%20-%20Conditional%20Access/01%20-%20Policy%20Configuration/49-Conditional%20Access%20Policy%20Configuration.png)
 
 
 
@@ -660,7 +659,7 @@ The policy evaluated whether the Windows device was reported as compliant during
 
 
 
-\## Policy Validation
+## Policy Validation
 
 
 
@@ -672,31 +671,31 @@ The report-only evaluation showed:
 
 
 
-\*\*Policy:\*\* `WIN11-CA-Require-Compliant-Device`
+**Policy:** `WIN11-CA-Require-Compliant-Device`
 
 
 
-\*\*Grant control:\*\* `RequireCompliantDevice`
+**Grant control:** `RequireCompliantDevice`
 
 
 
-\*\*Result:\*\* `Report-only: Success`
+**Result:** `Report-only: Success`
 
 
 
-!\[Conditional Access Report-Only Success](./Screenshots/07%20-%20Conditional%20Access/02%20-%20Policy%20Validation/50-Conditional%20Access%20Report-Only%20Success.png)
+![Conditional Access Report-Only Success](./Screenshots/07%20-%20Conditional%20Access/02%20-%20Policy%20Validation/50-Conditional%20Access%20Report-Only%20Success.png)
 
 
 
-A normal Windows sign-in was not useful for testing this policy because the custom Conditional Access policy was \*\*Not Applicable\*\* there. I used OneDrive for the cloud-application test instead.
+A normal Windows sign-in was not useful for testing this policy because the custom Conditional Access policy was **Not Applicable** there. I used OneDrive for the cloud-application test instead.
 
 
 
-\## Noncompliant Test
+## Noncompliant Test
 
 
 
-I temporarily turned off the \*\*Private\*\* and \*\*Public\*\* firewall profiles on `WIN11-CLIENT01`.
+I temporarily turned off the **Private** and **Public** firewall profiles on `WIN11-CLIENT01`.
 
 
 
@@ -708,13 +707,13 @@ The compliance report then showed:
 
 
 
-\- \*\*Compliant:\*\* 0
+- **Compliant:** 0
 
-\- \*\*Noncompliant:\*\* 1
+- **Noncompliant:** 1
 
-\- \*\*Others:\*\* 0
+- **Others:** 0
 
-\- \*\*Total:\*\* 1
+- **Total:** 1
 
 
 
@@ -734,7 +733,7 @@ The user shown for the device was:
 
 
 
-!\[WIN11-CLIENT01 Noncompliant](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/51-WIN11-CLIENT01%20Noncompliant.png)
+![WIN11-CLIENT01 Noncompliant](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/51-WIN11-CLIENT01%20Noncompliant.png)
 
 
 
@@ -746,11 +745,11 @@ The result changed to:
 
 
 
-\*\*Report-only: Failure\*\*
+**Report-only: Failure**
 
 
 
-!\[Conditional Access Noncompliant Failure](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/52-Conditional%20Access%20Noncompliant%20Failure.png)
+![Conditional Access Noncompliant Failure](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/52-Conditional%20Access%20Noncompliant%20Failure.png)
 
 
 
@@ -758,7 +757,7 @@ The failure reflected the fact that the device was no longer compliant.
 
 
 
-\## Compliance Restored
+## Compliance Restored
 
 
 
@@ -770,7 +769,7 @@ The device returned to a compliant state.
 
 
 
-!\[WIN11-CLIENT01 Compliance Restored](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/53-WIN11-CLIENT01%20Compliance%20Restored.png)
+![WIN11-CLIENT01 Compliance Restored](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/53-WIN11-CLIENT01%20Compliance%20Restored.png)
 
 
 
@@ -782,11 +781,11 @@ The policy returned to:
 
 
 
-\*\*Report-only: Success\*\*
+**Report-only: Success**
 
 
 
-!\[Conditional Access Compliance Restored](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/54-Conditional-Access-Compliance-Restored.png)
+![Conditional Access Compliance Restored](./Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/54-Conditional%20Access%20Compliance%20Restored.png)
 
 
 
@@ -806,31 +805,31 @@ The test flow was:
 
 Compliant device
 
-&#x20;     ↓
+     ↓
 
 Report-only Success
 
-&#x20;     ↓
+     ↓
 
 Private and Public firewall profiles turned off
 
-&#x20;     ↓
+     ↓
 
 Device became noncompliant
 
-&#x20;     ↓
+     ↓
 
 Report-only Failure
 
-&#x20;     ↓
+     ↓
 
 Firewall settings restored
 
-&#x20;     ↓
+     ↓
 
 Device became compliant again
 
-&#x20;     ↓
+     ↓
 
 Report-only Success
 
@@ -838,11 +837,11 @@ Report-only Success
 
 
 
-\---
+---
 
 
 
-\# 08 - Application Deployment
+# 08 - Application Deployment
 
 
 
@@ -854,7 +853,7 @@ I packaged the installer, configured the detection rule, assigned the applicatio
 
 
 
-\## Brave Win32 Packaging
+## Brave Win32 Packaging
 
 
 
@@ -878,7 +877,7 @@ The package wizard identified it as a Windows Win32 application.
 
 
 
-!\[Brave Win32 App Package](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/55-Brave%20Win32%20App%20Package.png)
+![Brave Win32 App Package](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/55-Brave%20Win32%20App%20Package.png)
 
 
 
@@ -886,15 +885,15 @@ The application was configured with:
 
 
 
-\- \*\*Name:\*\* Brave Browser
+- **Name:** Brave Browser
 
-\- \*\*Publisher:\*\* Brave Software, Inc.
+- **Publisher:** Brave Software, Inc.
 
-\- \*\*Developer:\*\* Brave Software
+- **Developer:** Brave Software
 
-\- \*\*Category:\*\* Productivity
+- **Category:** Productivity
 
-\- \*\*Platform:\*\* Windows
+- **Platform:** Windows
 
 
 
@@ -910,7 +909,7 @@ BraveBrowserSetup-BRV090.exe /silent /install
 
 
 
-The application was configured to install using the \*\*System\*\* account.
+The application was configured to install using the **System** account.
 
 
 
@@ -918,23 +917,23 @@ Other application settings included:
 
 
 
-\- Architecture: x64
+- Architecture: x64
 
-\- Minimum supported OS: Windows 10 version 1607
+- Minimum supported OS: Windows 10 version 1607
 
-\- Restart: No specific action
+- Restart: No specific action
 
-\- Installation time: 60 minutes
+- Installation time: 60 minutes
 
-\- Dependencies: None
+- Dependencies: None
 
-\- Supersedence: None
+- Supersedence: None
 
-\- Delivery Optimization: Disabled
+- Delivery Optimization: Disabled
 
 
 
-\## Detection Rule
+## Detection Rule
 
 
 
@@ -950,17 +949,17 @@ The detection settings were:
 
 
 
-\- \*\*Rule type:\*\* File
+- **Rule type:** File
 
-\- \*\*Detection method:\*\* File or folder exists
+- **Detection method:** File or folder exists
 
-\- \*\*File:\*\* `brave.exe`
+- **File:** `brave.exe`
 
-\- \*\*32-bit app on 64-bit clients:\*\* No
+- **32-bit app on 64-bit clients:** No
 
 
 
-!\[Brave Detection Rule](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/56-Brave%20Detection%20Rule.png)
+![Brave Detection Rule](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/56-Brave%20Detection%20Rule.png)
 
 
 
@@ -968,7 +967,7 @@ The detection rule pointed to the Brave Browser installation directory.
 
 
 
-\## Initial Client State
+## Initial Client State
 
 
 
@@ -976,15 +975,15 @@ Before deploying the application, I checked the Windows client to make sure Brav
 
 
 
-!\[Brave Not Installed](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/57-Brave%20Not%20Installed.png)
+![Brave Not Installed](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/57-Brave%20Not%20Installed.png)
 
 
 
-\## Assignment
+## Assignment
 
 
 
-Brave Browser was assigned as a \*\*Required\*\* application to:
+Brave Browser was assigned as a **Required** application to:
 
 
 
@@ -996,19 +995,19 @@ The assignment was active with:
 
 
 
-\- \*\*Availability:\*\* As soon as possible
+- **Availability:** As soon as possible
 
-\- \*\*Deadline:\*\* As soon as possible
+- **Deadline:** As soon as possible
 
-\- \*\*Available uninstall:\*\* Disabled
-
-
-
-!\[Brave Deployment Assignment](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/58-Brave%20Deployment%20Assignment.png)
+- **Available uninstall:** Disabled
 
 
 
-\## Deployment Review
+![Brave Deployment Assignment](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/58-Brave%20Deployment%20Assignment.png)
+
+
+
+## Deployment Review
 
 
 
@@ -1016,7 +1015,7 @@ Before creating the application, I reviewed the configuration.
 
 
 
-!\[Brave Deployment Review](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/59-Brave%20Deployment%20Review.png)
+![Brave Deployment Review](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/59-Brave%20Deployment%20Review.png)
 
 
 
@@ -1036,7 +1035,7 @@ I manually synchronized the client from:
 
 
 
-\*\*Settings → Accounts → Access work or school → organization account → Info → Sync\*\*
+**Settings → Accounts → Access work or school → organization account → Info → Sync**
 
 
 
@@ -1048,7 +1047,7 @@ The installer was not manually run on `WIN11-CLIENT01`.
 
 
 
-\## Client-Side Verification
+## Client-Side Verification
 
 
 
@@ -1056,11 +1055,11 @@ After deployment, Brave appeared in the installed applications on the Windows cl
 
 
 
-!\[Brave Successfully Installed](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/60-Brave%20Successfully%20Installed.png)
+![Brave Successfully Installed](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/60-Brave%20Successfully%20Installed.png)
 
 
 
-\## Intune-Side Verification
+## Intune-Side Verification
 
 
 
@@ -1068,17 +1067,17 @@ The Intune device install status showed:
 
 
 
-\- \*\*Device:\*\* `WIN11-CLIENT01`
+- **Device:** `WIN11-CLIENT01`
 
-\- \*\*User:\*\* `areddy@thousiflab.onmicrosoft.com`
+- **User:** `areddy@thousiflab.onmicrosoft.com`
 
-\- \*\*Device platform:\*\* Windows
+- **Device platform:** Windows
 
-\- \*\*Application status:\*\* Installed
+- **Application status:** Installed
 
 
 
-!\[Brave Intune Deployment Successful](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/61-Brave%20Intune%20Deployment%20Successful.png)
+![Brave Intune Deployment Successful](./Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/61-Brave%20Intune%20Deployment%20Successful.png)
 
 
 
@@ -1086,11 +1085,11 @@ The client-side installation and Intune status both showed Brave as installed.
 
 
 
-\---
+---
 
 
 
-\# 09 - Android Device Management
+# 09 - Android Device Management
 
 
 
@@ -1106,7 +1105,7 @@ The Android device used throughout this section was:
 
 
 
-`areddy\_AndroidForWork\_8/10/2026\_2:18 PM`
+`areddy_AndroidForWork_8/10/2026_2:18 PM`
 
 
 
@@ -1130,27 +1129,27 @@ The overall Android flow was:
 
 Managed Google Play
 
-&#x20;       ↓
+       ↓
 
 Android Enterprise Enrollment
 
-&#x20;       ↓
+       ↓
 
 Work Profile Configuration
 
-&#x20;       ↓
+       ↓
 
 Compliance
 
-&#x20;       ↓
+       ↓
 
 Conditional Access
 
-&#x20;       ↓
+       ↓
 
 Application Management
 
-&#x20;       ↓
+       ↓
 
 App Protection
 
@@ -1158,11 +1157,11 @@ App Protection
 
 
 
-\## Enrollment
+## Enrollment
 
 
 
-\### Managed Google Play
+### Managed Google Play
 
 
 
@@ -1174,19 +1173,19 @@ The setup page showed:
 
 
 
-\- \*\*Status:\*\* Setup
+- **Status:** Setup
 
-\- \*\*Organization:\*\* ThousifLab
+- **Organization:** ThousifLab
 
-\- \*\*Linked account:\*\* `thousif@thousiflab.onmicrosoft.com`
-
-
-
-!\[Managed Google Play Setup](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/62-Managed%20Google%20Play%20Setup.png)
+- **Linked account:** `thousif@thousiflab.onmicrosoft.com`
 
 
 
-\### Android Enterprise Enrollment
+![Managed Google Play Setup](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/62-Managed%20Google%20Play%20Setup.png)
+
+
+
+### Android Enterprise Enrollment
 
 
 
@@ -1194,11 +1193,11 @@ I reviewed the enrollment settings for personally owned Android devices using a 
 
 
 
-!\[Android Enterprise Enrollment Options](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/63-Android%20Enterprise%20Enrollment%20Options.png)
+![Android Enterprise Enrollment Options](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/63-Android%20Enterprise%20Enrollment%20Options.png)
 
 
 
-\### Work Profile Setup
+### Work Profile Setup
 
 
 
@@ -1210,11 +1209,11 @@ The final screen showed:
 
 
 
-\- Create work profile
+- Create work profile
 
-\- Activate work profile
+- Activate work profile
 
-\- Update device settings
+- Update device settings
 
 
 
@@ -1222,15 +1221,15 @@ The device displayed:
 
 
 
-\*\*You're all set!\*\*
+**You're all set!**
 
 
 
-!\[ThousifLab Android Access Setup](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/64-Thousiflab%20Android%20Access%20Setup.png)
+![ThousifLab Android Access Setup](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/64-ThousifLab%20Android%20Access%20Setup.png)
 
 
 
-\### Device Enrolled in Intune
+### Device Enrolled in Intune
 
 
 
@@ -1242,33 +1241,33 @@ The device showed:
 
 
 
-\- Device: `areddy\_AndroidForWork\_8/10/2026\_2:18 PM`
+- Device: `areddy_AndroidForWork_8/10/2026_2:18 PM`
 
-\- Primary user: Arjun Reddy
+- Primary user: Arjun Reddy
 
-\- Enrolled by: Arjun Reddy
+- Enrolled by: Arjun Reddy
 
-\- Ownership: Personal
+- Ownership: Personal
 
-\- Compliance: Compliant
+- Compliance: Compliant
 
-\- Operating system: Android
+- Operating system: Android
 
-\- Manufacturer: OnePlus
+- Manufacturer: OnePlus
 
-\- Model: CPH2447
-
-
-
-!\[Android Device Enrolled in Intune](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/65-Android%20Device%20Enrolled%20in%20Intune.png)
+- Model: CPH2447
 
 
 
-\---
+![Android Device Enrolled in Intune](./Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/65-Android%20Device%20Enrolled%20in%20Intune.png)
 
 
 
-\## Android Configuration
+---
+
+
+
+## Android Configuration
 
 
 
@@ -1280,11 +1279,11 @@ The Android Work Profile security configuration was:
 
 
 
-The platform was \*\*Android Enterprise\*\* and the profile type was \*\*Device restrictions\*\*.
+The platform was **Android Enterprise** and the profile type was **Device restrictions**.
 
 
 
-\### Work Profile and Device Restrictions
+### Work Profile and Device Restrictions
 
 
 
@@ -1292,33 +1291,33 @@ The configured settings included:
 
 
 
-\- Copy and paste between work and personal profiles: Block
+- Copy and paste between work and personal profiles: Block
 
-\- Data sharing between work and personal profiles: Device default
+- Data sharing between work and personal profiles: Device default
 
-\- Work profile notifications while device locked: Block
+- Work profile notifications while device locked: Block
 
-\- Default app permissions: Device default
+- Default app permissions: Device default
 
-\- Add and remove accounts: Allow all account types except Google accounts
+- Add and remove accounts: Allow all account types except Google accounts
 
-\- Contact sharing via Bluetooth: Not configured
+- Contact sharing via Bluetooth: Not configured
 
-\- Screen capture: Block
+- Screen capture: Block
 
-\- Display work contact caller-ID in personal profile: Block
+- Display work contact caller-ID in personal profile: Block
 
-\- Search work contacts from personal profile: Block
+- Search work contacts from personal profile: Block
 
-\- Camera: Not configured
-
-
-
-!\[Android Work Profile General Settings](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/66-Android%20Work%20Profile%20General%20Settings.png)
+- Camera: Not configured
 
 
 
-\### Work Profile Password Settings
+![Android Work Profile General Settings](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/66-Android%20Work%20Profile%20General%20Settings.png)
+
+
+
+### Work Profile Password Settings
 
 
 
@@ -1326,33 +1325,33 @@ The Work Profile password settings included:
 
 
 
-\- Require Work Profile Password: Require
+- Require Work Profile Password: Require
 
-\- Maximum inactivity until Work Profile locks: 5 minutes
+- Maximum inactivity until Work Profile locks: 5 minutes
 
-\- Number of sign-in failures before wiping the Work Profile: 10
+- Number of sign-in failures before wiping the Work Profile: 10
 
-\- Password expiration: Not configured
+- Password expiration: Not configured
 
-\- Prevent reuse of previous passwords: 5
+- Prevent reuse of previous passwords: 5
 
-\- Face unlock: Not configured
+- Face unlock: Not configured
 
-\- Fingerprint unlock: Not configured
+- Fingerprint unlock: Not configured
 
-\- Iris unlock: Not configured
+- Iris unlock: Not configured
 
-\- Smart Lock and other trust agents: Not configured
+- Smart Lock and other trust agents: Not configured
 
-\- One lock for device and Work Profile: Not configured
-
-
-
-!\[Android Work Profile Password Settings](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/67-Android%20Work%20Profile%20Password%20Settings.png)
+- One lock for device and Work Profile: Not configured
 
 
 
-\### System Security
+![Android Work Profile Password Settings](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/67-Android%20Work%20Profile%20Password%20Settings.png)
+
+
+
+### System Security
 
 
 
@@ -1360,21 +1359,21 @@ The visible security settings included:
 
 
 
-\- Threat scan on apps: Require
+- Threat scan on apps: Require
 
-\- Prevent app installations from unknown sources in the personal profile: Block
+- Prevent app installations from unknown sources in the personal profile: Block
 
-\- Always-on VPN: Not configured
+- Always-on VPN: Not configured
 
-\- Lockdown mode: Not configured
-
-
-
-!\[Android Personal Profile and System Security](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/68-Android%20Personal%20Profile%20and%20System%20Security.png)
+- Lockdown mode: Not configured
 
 
 
-\### Policy Review
+![Android Personal Profile and System Security](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/68-Android%20Personal%20Profile%20and%20System%20Security.png)
+
+
+
+### Policy Review
 
 
 
@@ -1386,11 +1385,11 @@ The completed configuration profile was named:
 
 
 
-!\[Android Work Profile Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/69-Android%20Work%20Profile%20Policy%20Review.png)
+![Android Work Profile Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/69-Android%20Work%20Profile%20Policy%20Review.png)
 
 
 
-\### Policy Applied
+### Policy Applied
 
 
 
@@ -1402,19 +1401,19 @@ The settings showed:
 
 
 
-\*\*Succeeded\*\*
+**Succeeded**
 
 
 
-!\[Android Work Profile Policy Applied](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/70-Android%20Work%20Profile%20Policy%20Applied.png)
+![Android Work Profile Policy Applied](./Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/70-Android%20Work%20Profile%20Policy%20Applied.png)
 
 
 
-\---
+---
 
 
 
-\## Android Compliance
+## Android Compliance
 
 
 
@@ -1426,7 +1425,7 @@ The compliance policy was:
 
 
 
-The platform was \*\*Android Enterprise\*\* and the profile type was \*\*Personally-owned work profile\*\*.
+The platform was **Android Enterprise** and the profile type was **Personally-owned work profile**.
 
 
 
@@ -1438,7 +1437,7 @@ The policy was assigned to:
 
 
 
-\### Device Health and Play Protect
+### Device Health and Play Protect
 
 
 
@@ -1446,25 +1445,25 @@ The configured settings included:
 
 
 
-\- Rooted devices: Block
+- Rooted devices: Block
 
-\- Required device threat level: Low
+- Required device threat level: Low
 
-\- Google Play Services is configured: Require
+- Google Play Services is configured: Require
 
-\- Up-to-date security provider: Require
+- Up-to-date security provider: Require
 
-\- Play Integrity Verdict: Not configured
+- Play Integrity Verdict: Not configured
 
-\- Minimum OS version: 12
-
-
-
-!\[Android Compliance Device Health and Play Protect](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/71-Android%20Compliance%20Device%20Health%20and%20Play%20Protect.png)
+- Minimum OS version: 12
 
 
 
-\### Device and System Security
+![Android Compliance Device Health and Play Protect](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/71-Android%20Compliance%20Device%20Health%20and%20Play%20Protect.png)
+
+
+
+### Device and System Security
 
 
 
@@ -1472,23 +1471,23 @@ The policy also required:
 
 
 
-\- Encryption of data storage on device: Require
+- Encryption of data storage on device: Require
 
-\- Block apps from unknown sources: Block
+- Block apps from unknown sources: Block
 
-\- Company Portal app runtime integrity: Require
+- Company Portal app runtime integrity: Require
 
-\- Block USB debugging on device: Block
+- Block USB debugging on device: Block
 
-\- Require a password to unlock mobile devices: Require
-
-
-
-!\[Android Compliance Device Security](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/72-Android%20Compliance%20Device%20Security.png)
+- Require a password to unlock mobile devices: Require
 
 
 
-\### Password Requirements
+![Android Compliance Device Security](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/72-Android%20Compliance%20Device%20Security.png)
+
+
+
+### Password Requirements
 
 
 
@@ -1496,15 +1495,15 @@ For Android 12 and later, password complexity was set to:
 
 
 
-\*\*High\*\*
+**High**
 
 
 
-!\[Android Compliance Password Settings](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/73-Android%20Compliance%20Password%20Settings.png)
+![Android Compliance Password Settings](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/73-Android%20Compliance%20Password%20Settings.png)
 
 
 
-\### Policy Review
+### Policy Review
 
 
 
@@ -1516,11 +1515,11 @@ The final policy review showed:
 
 
 
-!\[Android Compliance Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/74-Android%20Compliance%20Policy%20Review.png)
+![Android Compliance Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/74-Android%20Compliance%20Policy%20Review.png)
 
 
 
-\### Compliance Verification
+### Compliance Verification
 
 
 
@@ -1532,31 +1531,31 @@ The report included:
 
 
 
-\- Minimum OS version
+- Minimum OS version
 
-\- Password requirement
+- Password requirement
 
-\- Password complexity
+- Password complexity
 
-\- Rooted devices
+- Rooted devices
 
-\- USB debugging restriction
+- USB debugging restriction
 
-\- Company Portal runtime integrity
+- Company Portal runtime integrity
 
-\- Google Play Services configuration
+- Google Play Services configuration
 
-\- Security provider
+- Security provider
 
-\- Encryption
-
-
-
-!\[Android Compliance Status](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/75-Android%20Compliance%20Status.png)
+- Encryption
 
 
 
-The normal Android device state was Android 16 and \*\*Compliant\*\*.
+![Android Compliance Status](./Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/75-Android%20Compliance%20Status.png)
+
+
+
+The normal Android device state was Android 16 and **Compliant**.
 
 
 
@@ -1568,11 +1567,11 @@ After the test, I changed the requirement back to Android 12 and restored compli
 
 
 
-\---
+---
 
 
 
-\## Android Conditional Access
+## Android Conditional Access
 
 
 
@@ -1588,15 +1587,15 @@ The policy was configured for Android and used:
 
 
 
-\*\*Require device to be marked as compliant\*\*
+**Require device to be marked as compliant**
 
 
 
-The initial state was \*\*Report-only\*\*.
+The initial state was **Report-only**.
 
 
 
-\### Policy Review
+### Policy Review
 
 
 
@@ -1604,27 +1603,27 @@ The policy details showed:
 
 
 
-\- State: Report-only
+- State: Report-only
 
-\- Users, agents or workload identities: 1 group
+- Users, agents or workload identities: 1 group
 
-\- Excluded identities: 0
+- Excluded identities: 0
 
-\- Included resources: 1
+- Included resources: 1
 
-\- Requirement for access: Require device to be marked as compliant
+- Requirement for access: Require device to be marked as compliant
 
-\- Device platform: Android
+- Device platform: Android
 
-\- Client apps: 1 included
-
-
-
-!\[Android Conditional Access Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/76-Android%20Conditional%20Access%20Policy%20Review.png)
+- Client apps: 1 included
 
 
 
-\### Report-only Validation
+![Android Conditional Access Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/76-Android%20Conditional%20Access%20Policy%20Review.png)
+
+
+
+### Report-only Validation
 
 
 
@@ -1636,7 +1635,7 @@ The policy matched and returned:
 
 
 
-\*\*Report-only: Success\*\*
+**Report-only: Success**
 
 
 
@@ -1648,11 +1647,11 @@ The grant control shown was:
 
 
 
-!\[Conditional Access Report-Only Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/80-Conditional-Access-Report-Only-Success.png)
+![Conditional Access Report-Only Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/80-Conditional-Access-Report-Only-Success.png)
 
 
 
-\### Conditional Access Enforcement
+### Conditional Access Enforcement
 
 
 
@@ -1664,11 +1663,11 @@ A compliant Android sign-in continued to succeed.
 
 
 
-!\[Conditional Access Enforced Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/81-Conditional-Access-Enforced-Success.png)
+![Conditional Access Enforced Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/81-Conditional-Access-Enforced-Success.png)
 
 
 
-\### Deliberate Noncompliance
+### Deliberate Noncompliance
 
 
 
@@ -1696,21 +1695,21 @@ The compliance report showed:
 
 
 
-\- Compliant: 0
+- Compliant: 0
 
-\- Noncompliant: 1
+- Noncompliant: 1
 
-\- Others: 0
+- Others: 0
 
-\- Total: 1
-
-
-
-!\[Android Device Noncompliant](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/82-Android-Device-Noncompliant.png)
+- Total: 1
 
 
 
-\### Conditional Access Block
+![Android Device Noncompliant](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/82-Android-Device-Noncompliant.png)
+
+
+
+### Conditional Access Block
 
 
 
@@ -1718,7 +1717,7 @@ The Conditional Access result then became:
 
 
 
-\*\*Failure\*\*
+**Failure**
 
 
 
@@ -1730,7 +1729,7 @@ The grant control remained:
 
 
 
-!\[Conditional Access Noncompliant Blocked](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
+![Conditional Access Noncompliant Blocked](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
 
 
 
@@ -1742,15 +1741,15 @@ It specifically showed:
 
 
 
-\*\*Update your operating system to 17 or later.\*\*
+**Update your operating system to 17 or later.**
 
 
 
-!\[Android Conditional Access Blocked User Message](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/84-Android-Conditional-Access-Blocked-User-Message.png)
+![Android Conditional Access Blocked User Message](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/84-Android-Conditional-Access-Blocked-User-Message.png)
 
 
 
-\### Compliance Restored
+### Compliance Restored
 
 
 
@@ -1762,17 +1761,17 @@ The compliance report returned to:
 
 
 
-\- Compliant: 1
+- Compliant: 1
 
-\- Noncompliant: 0
+- Noncompliant: 0
 
-\- Others: 0
+- Others: 0
 
-\- Total: 1
+- Total: 1
 
 
 
-!\[Conditional Access Access Restored](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/85-Conditional-Access-Access-Restored.png)
+![Conditional Access Access Restored](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/85-Conditional-Access-Access-Restored.png)
 
 
 
@@ -1780,11 +1779,11 @@ A fresh sign-in was then tested and Conditional Access returned:
 
 
 
-\*\*Success\*\*
+**Success**
 
 
 
-!\[Conditional Access Access Restored Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/86-Conditional-Access-Access-Restored-Success.png)
+![Conditional Access Access Restored Success](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/86-Conditional-Access-Access-Restored-Success.png)
 
 
 
@@ -1796,31 +1795,31 @@ The Android test flow was:
 
 Compliant Android 16
 
-&#x20;       ↓
+       ↓
 
 Access allowed
 
-&#x20;       ↓
+       ↓
 
 Minimum OS changed 12 → 17
 
-&#x20;       ↓
+       ↓
 
 Device became noncompliant
 
-&#x20;       ↓
+       ↓
 
 Conditional Access blocked access
 
-&#x20;       ↓
+       ↓
 
 Minimum OS restored to 12
 
-&#x20;       ↓
+       ↓
 
 Compliance restored
 
-&#x20;       ↓
+       ↓
 
 Access allowed again
 
@@ -1832,11 +1831,11 @@ Unlike the Windows Conditional Access test, this Android policy was enabled for 
 
 
 
-\---
+---
 
 
 
-\## Android Application Management
+## Android Application Management
 
 
 
@@ -1844,7 +1843,7 @@ Android applications were managed through Intune and Managed Google Play.
 
 
 
-\### Microsoft Outlook
+### Microsoft Outlook
 
 
 
@@ -1852,7 +1851,7 @@ Microsoft Outlook was added as a Managed Google Play application.
 
 
 
-!\[Android Outlook Managed Google Play App Information](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/77-Android%20Outlook%20Managed%20Google%20Play%20App%20Information.png)
+![Android Outlook Managed Google Play App Information](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/77-Android%20Outlook%20Managed%20Google%20Play%20App%20Information.png)
 
 
 
@@ -1860,7 +1859,7 @@ The application was assigned as:
 
 
 
-\*\*Required\*\*
+**Required**
 
 
 
@@ -1872,11 +1871,11 @@ to:
 
 
 
-!\[Android Outlook Required Assignment](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/78-Android%20Outlook%20Required%20Assignment.png)
+![Android Outlook Required Assignment](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/78-Android%20Outlook%20Required%20Assignment.png)
 
 
 
-\### Outlook Installation
+### Outlook Installation
 
 
 
@@ -1904,15 +1903,15 @@ The status was:
 
 
 
-\*\*Installed\*\*
+**Installed**
 
 
 
-!\[Android Outlook Installation Status](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/79-Android%20Outlook%20Installation%20Status.png)
+![Android Outlook Installation Status](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/79-Android-Outlook-Installation-Status.png)
 
 
 
-\### Final Managed Apps State
+### Final Managed Apps State
 
 
 
@@ -1920,13 +1919,13 @@ The later Managed Apps view showed:
 
 
 
-\- Microsoft Edge — `150.0.4078.96 (407809623)`
+- Microsoft Edge — `150.0.4078.96 (407809623)`
 
-\- Intune Company Portal — `5.0.7046.0 (8261458)`
+- Intune Company Portal — `5.0.7046.0 (8261458)`
 
-\- Microsoft Outlook — `5.2630.0 (72630118)`
+- Microsoft Outlook — `5.2630.0 (72630118)`
 
-\- Microsoft Authenticator — `6.2607.4697 (202646973)`
+- Microsoft Authenticator — `6.2607.4697 (202646973)`
 
 
 
@@ -1934,27 +1933,27 @@ All were shown with:
 
 
 
-\*\*Resolved intent:\*\* Required install
+**Resolved intent:** Required install
 
 
 
-\*\*Installation status:\*\* Installed
+**Installation status:** Installed
 
 
 
-!\[Android Managed Apps Outlook Edge Installed](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/87-Android-Managed-Apps-Outlook-Edge-Installed.png)
+![Android Managed Apps Outlook Edge Installed](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/87-Android-Managed-Apps-Outlook-Edge-Installed.png)
 
 
 
-!\[Android Managed Apps All Required Installed](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/88-Android-Managed-Apps-All-Required-Installed.png)
+![Android Managed Apps All Required Installed](./Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/88-Android-Managed-Apps-All-Required-Installed.png)
 
 
 
-\---
+---
 
 
 
-\## Android App Protection
+## Android App Protection
 
 
 
@@ -1974,7 +1973,7 @@ The management type was:
 
 
 
-\*\*All app types\*\*
+**All app types**
 
 
 
@@ -1982,13 +1981,13 @@ The policy targeted:
 
 
 
-\- Microsoft Edge
+- Microsoft Edge
 
-\- Microsoft Outlook
+- Microsoft Outlook
 
 
 
-\### Data Protection
+### Data Protection
 
 
 
@@ -1996,43 +1995,43 @@ The main controls included:
 
 
 
-\- Backup org data to Android backup services: Block
+- Backup org data to Android backup services: Block
 
-\- Send org data to other apps: Policy managed apps
+- Send org data to other apps: Policy managed apps
 
-\- Save copies of org data: Block
+- Save copies of org data: Block
 
-\- Allow user to save copies to selected services: 2 selected
+- Allow user to save copies to selected services: 2 selected
 
-\- Transfer telecommunication data to: Any dialer app
+- Transfer telecommunication data to: Any dialer app
 
-\- Transfer messaging data to: Any messaging app
+- Transfer messaging data to: Any messaging app
 
-\- Receive data from other apps: Policy managed apps
+- Receive data from other apps: Policy managed apps
 
-\- Open data into Org documents: Block
+- Open data into Org documents: Block
 
-\- Allow users to open data from selected services: 2 selected
+- Allow users to open data from selected services: 2 selected
 
-\- Restrict cut, copy, and paste between other apps: Policy managed apps with paste in
+- Restrict cut, copy, and paste between other apps: Policy managed apps with paste in
 
-\- Cut and copy character limit for any app: 0
+- Cut and copy character limit for any app: 0
 
-\- Screen capture and Google Assistant: Block
+- Screen capture and Google Assistant: Block
 
-\- Approved keyboards: Require
+- Approved keyboards: Require
 
-\- Encrypt org data: Require
+- Encrypt org data: Require
 
-\- Encrypt org data on enrolled devices: Require
-
-
-
-!\[Android APP Data Protection Data Transfer](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/89-Android-APP-Data-Protection-Data-Transfer.png)
+- Encrypt org data on enrolled devices: Require
 
 
 
-!\[Android APP Data Protection Encryption](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/90-Android-APP-Data-Protection-Encryption.png)
+![Android APP Data Protection Data Transfer](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/89-Android-APP-Data-Protection-Data-Transfer.png)
+
+
+
+![Android APP Data Protection Encryption](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/90-Android-APP-Data-Protection-Encryption.png)
 
 
 
@@ -2040,23 +2039,23 @@ Additional functionality settings included:
 
 
 
-\- Sync policy managed app data with native apps or add-ins: Block
+- Sync policy managed app data with native apps or add-ins: Block
 
-\- Printing org data: Block
+- Printing org data: Block
 
-\- Restrict web content transfer with other apps: Microsoft Edge
+- Restrict web content transfer with other apps: Microsoft Edge
 
-\- Org data notifications: Allow
+- Org data notifications: Allow
 
-\- Start Microsoft Tunnel connection on app-launch: No
-
-
-
-!\[Android APP Data Protection Functionality](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/91-Android-APP-Data-Protection-Functionality.png)
+- Start Microsoft Tunnel connection on app-launch: No
 
 
 
-\### Access Requirements
+![Android APP Data Protection Functionality](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/91-Android-APP-Data-Protection-Functionality.png)
+
+
+
+### Access Requirements
 
 
 
@@ -2068,33 +2067,33 @@ The settings included:
 
 
 
-\- PIN for access: Require
+- PIN for access: Require
 
-\- PIN type: Numeric
+- PIN type: Numeric
 
-\- Simple PIN: Block
+- Simple PIN: Block
 
-\- Minimum PIN length: 6
+- Minimum PIN length: 6
 
-\- Biometrics instead of PIN for access: Allow
+- Biometrics instead of PIN for access: Allow
 
-\- Override biometrics with PIN after timeout: Require
+- Override biometrics with PIN after timeout: Require
 
-\- Timeout: 30 minutes of inactivity
+- Timeout: 30 minutes of inactivity
 
-\- Class 3 Biometrics: Require
+- Class 3 Biometrics: Require
 
-\- Override biometrics with PIN after biometric updates: Require
+- Override biometrics with PIN after biometric updates: Require
 
-\- PIN reset after number of days: Yes
+- PIN reset after number of days: Yes
 
-\- Number of days: 90
+- Number of days: 90
 
-\- Previous PIN values maintained: 3
+- Previous PIN values maintained: 3
 
 
 
-!\[Android APP Access Requirements PIN](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/92-Android-APP-Access-Requirements-PIN.png)
+![Android APP Access Requirements PIN](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/92-Android-APP-Access-Requirements-PIN.png)
 
 
 
@@ -2102,19 +2101,19 @@ The policy also required:
 
 
 
-\- App PIN when device PIN is set: Require
+- App PIN when device PIN is set: Require
 
-\- Work or school account credentials for access: Require
+- Work or school account credentials for access: Require
 
-\- Recheck access requirements after: 30 minutes of inactivity
-
-
-
-!\[Android APP Access Requirements Credentials](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/93-Android-APP-Access-Requirements-Credentials.png)
+- Recheck access requirements after: 30 minutes of inactivity
 
 
 
-\### Conditional Launch
+![Android APP Access Requirements Credentials](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/93-Android-APP-Access-Requirements-Credentials.png)
+
+
+
+### Conditional Launch
 
 
 
@@ -2122,23 +2121,23 @@ The conditional launch settings included:
 
 
 
-\- Maximum PIN attempts: 5 → Reset PIN
+- Maximum PIN attempts: 5 → Reset PIN
 
-\- Offline grace period: 30 minutes → Block access
+- Offline grace period: 30 minutes → Block access
 
-\- Offline grace period: 7 days → Wipe data
+- Offline grace period: 7 days → Wipe data
 
-\- Jailbroken/rooted devices: Block access
+- Jailbroken/rooted devices: Block access
 
-\- Samsung Knox device attestation: Block access on supported devices
-
-
-
-!\[Android APP Conditional Launch](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/94-Android-APP-Conditional-Launch.png)
+- Samsung Knox device attestation: Block access on supported devices
 
 
 
-\### Policy Review
+![Android APP Conditional Launch](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/94-Android-APP-Conditional-Launch.png)
+
+
+
+### Policy Review
 
 
 
@@ -2154,19 +2153,19 @@ with:
 
 
 
-\- Platform: Android
+- Platform: Android
 
-\- Management type: All app types
+- Management type: All app types
 
-\- Public apps: Microsoft Edge and Microsoft Outlook
-
-
-
-!\[Android APP Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/95-Android-APP-Policy-Review.png)
+- Public apps: Microsoft Edge and Microsoft Outlook
 
 
 
-\### App Protection Activation
+![Android APP Policy Review](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/95-Android-APP-Policy-Review.png)
+
+
+
+### App Protection Activation
 
 
 
@@ -2174,21 +2173,21 @@ After deployment, the protected account showed:
 
 
 
-\- Recently connected
+- Recently connected
 
-\- Device is supported
+- Device is supported
 
-\- Everything's up-to-date
+- Everything's up-to-date
 
-\- Device is healthy
-
-
-
-!\[Android APP Outlook Protection Activated](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/96-Android-APP-Outlook-Protection-Activated.png)
+- Device is healthy
 
 
 
-\### Corporate Data Test
+![Android APP Outlook Protection Activated](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/96-Android-APP-Outlook-Protection-Activated.png)
+
+
+
+### Corporate Data Test
 
 
 
@@ -2200,7 +2199,7 @@ Corporate content was copied from the protected Microsoft application.
 
 
 
-!\[Android APP Outlook Corporate Data Copied](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/97-Android-APP-Outlook-Corporate-Data-Copied.png)
+![Android APP Outlook Corporate Data Copied](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/97-Android-APP-Outlook-Corporate-Data-Copied.png)
 
 
 
@@ -2212,11 +2211,11 @@ The device displayed:
 
 
 
-\*\*Your organization's data cannot be pasted here.\*\*
+**Your organization's data cannot be pasted here.**
 
 
 
-!\[Android APP Unmanaged App Data Transfer Blocked](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
+![Android APP Unmanaged App Data Transfer Blocked](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
 
 
 
@@ -2228,7 +2227,7 @@ I also tested managed-to-managed transfer.
 
 
 
-!\[Android APP Managed App Data Transfer Allowed](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/99-Android-APP-Managed-App-Data-Transfer-Allowed.png)
+![Android APP Managed App Data Transfer Allowed](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/99-Android-APP-Managed-App-Data-Transfer-Allowed.png)
 
 
 
@@ -2252,7 +2251,7 @@ Blocked
 
 
 
-\### Application PIN Test
+### Application PIN Test
 
 
 
@@ -2264,7 +2263,7 @@ The protected account displayed:
 
 
 
-\*\*Managed by your organization\*\*
+**Managed by your organization**
 
 
 
@@ -2272,15 +2271,15 @@ and prompted:
 
 
 
-\*\*Enter your PIN\*\*
+**Enter your PIN**
 
 
 
-!\[Android APP App PIN Access Control](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/100-Android-APP-App-PIN-Access-Control.png)
+![Android APP App PIN Access Control](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/100-Android-APP-App-PIN-Access-Control.png)
 
 
 
-\### App Protection Check-In
+### App Protection Check-In
 
 
 
@@ -2288,25 +2287,25 @@ The Intune App Protection overview showed:
 
 
 
-\- Apps: 2
+- Apps: 2
 
-\- Users checked in: 1
+- Users checked in: 1
 
-\- Microsoft Edge: 1 check-in
+- Microsoft Edge: 1 check-in
 
-\- Microsoft Outlook: 1 check-in
-
-
-
-!\[Android APP Intune Policy User Check-In](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/101-Android-APP-Intune-Policy-User-Check-In.png)
+- Microsoft Outlook: 1 check-in
 
 
 
-\---
+![Android APP Intune Policy User Check-In](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/101-Android-APP-Intune-Policy-User-Check-In.png)
 
 
 
-\# 10 - Windows App Protection (MAM)
+---
+
+
+
+# 10 - Windows App Protection (MAM)
 
 
 
@@ -2330,7 +2329,7 @@ The policy was assigned to:
 
 
 
-!\[Windows APP Basics](./Screenshots/10%20-%20Windows%20App%20Protection/101-Windows-APP-Basics.png)
+![Windows APP Basics](./Screenshots/10%20-%20Windows%20App%20Protection/101-Windows-APP-Basics.png)
 
 
 
@@ -2342,7 +2341,7 @@ The minimum OS version was left unconfigured.
 
 
 
-!\[Windows APP Target Apps](./Screenshots/10%20-%20Windows%20App%20Protection/102-Windows-APP-Target-Apps.png)
+![Windows APP Target Apps](./Screenshots/10%20-%20Windows%20App%20Protection/102-Windows-APP-Target-Apps.png)
 
 
 
@@ -2350,43 +2349,43 @@ The main data protection settings included:
 
 
 
-\- Send org data to other apps: Policy managed apps
+- Send org data to other apps: Policy managed apps
 
-\- Save copies of org data: Block
+- Save copies of org data: Block
 
-\- Allow user to save copies to selected services: 2 selected
+- Allow user to save copies to selected services: 2 selected
 
-\- Receive data from other apps: Policy managed apps
+- Receive data from other apps: Policy managed apps
 
-\- Open data into Org documents: Block
+- Open data into Org documents: Block
 
-\- Allow users to open data from selected services: 2 selected
+- Allow users to open data from selected services: 2 selected
 
-\- Restrict cut, copy, and paste between other apps: Policy managed apps with paste in
+- Restrict cut, copy, and paste between other apps: Policy managed apps with paste in
 
-\- Cut/copy character limit for any app: 0
+- Cut/copy character limit for any app: 0
 
-\- Screen capture and Google Assistant: Block
+- Screen capture and Google Assistant: Block
 
-\- Approved keyboards: Require
+- Approved keyboards: Require
 
-\- Encrypt org data: Require
+- Encrypt org data: Require
 
-\- Encrypt org data on enrolled devices: Require
+- Encrypt org data on enrolled devices: Require
 
-\- Sync policy managed app data with native apps or add-ins: Block
+- Sync policy managed app data with native apps or add-ins: Block
 
-\- Printing org data: Block
+- Printing org data: Block
 
-\- Restrict web content transfer with other apps: Microsoft Edge
+- Restrict web content transfer with other apps: Microsoft Edge
 
-\- Org data notifications: Allow
+- Org data notifications: Allow
 
-\- Start Microsoft Tunnel connection on app-launch: No
+- Start Microsoft Tunnel connection on app-launch: No
 
 
 
-!\[Windows APP Data Protection](./Screenshots/10%20-%20Windows%20App%20Protection/103-Windows-APP-Data-Protection.png)
+![Windows APP Data Protection](./Screenshots/10%20-%20Windows%20App%20Protection/103-Windows-APP-Data-Protection.png)
 
 
 
@@ -2394,17 +2393,17 @@ Health checks included:
 
 
 
-\- Offline grace period: 30 minutes → Block access
+- Offline grace period: 30 minutes → Block access
 
-\- Offline grace period: 7 days → Wipe data
+- Offline grace period: 7 days → Wipe data
 
-\- Maximum allowed device threat level: Secured → Block access
+- Maximum allowed device threat level: Secured → Block access
 
-\- Minimum OS: Not configured
+- Minimum OS: Not configured
 
 
 
-!\[Windows APP Health Checks](./Screenshots/10%20-%20Windows%20App%20Protection/104-Windows-APP-Health-Checks.png)
+![Windows APP Health Checks](./Screenshots/10%20-%20Windows%20App%20Protection/104-Windows-APP-Health-Checks.png)
 
 
 
@@ -2412,11 +2411,11 @@ The final policy review showed the policy name, Windows platform and Microsoft E
 
 
 
-!\[Windows APP Policy Review](./Screenshots/10%20-%20Windows%20App%20Protection/105-Windows-APP-Policy-Review.png)
+![Windows APP Policy Review](./Screenshots/10%20-%20Windows%20App%20Protection/105-Windows-APP-Policy-Review.png)
 
 
 
-\## CLIENT02 BYOD Test
+## CLIENT02 BYOD Test
 
 
 
@@ -2428,7 +2427,7 @@ Microsoft Edge was signed in with the `areddy` account.
 
 
 
-When Edge asked whether the work account should be added to other applications, I selected \*\*No\*\*.
+When Edge asked whether the work account should be added to other applications, I selected **No**.
 
 
 
@@ -2440,7 +2439,7 @@ This showed that Microsoft 365 authentication worked on the unmanaged PC without
 
 
 
-\## Download Restriction Test
+## Download Restriction Test
 
 
 
@@ -2452,7 +2451,7 @@ The download was blocked with:
 
 
 
-> \*\*Your organization prevents you from downloading this file.\*\*
+> **Your organization prevents you from downloading this file.**
 
 
 
@@ -2464,11 +2463,11 @@ The restriction applied to the protected work session, while the Windows device 
 
 
 
-!\[Windows APP Download Blocked](./Screenshots/10%20-%20Windows%20App%20Protection/106-Windows-APP-Download-Blocked.png)
+![Windows APP Download Blocked](./Screenshots/10%20-%20Windows%20App%20Protection/106-Windows-APP-Download-Blocked.png)
 
 
 
-\## Copy and Paste Test
+## Copy and Paste Test
 
 
 
@@ -2484,11 +2483,11 @@ The paste was blocked with:
 
 
 
-> \*\*You copied from a protected location. Pasting here isn't permitted by your organization.\*\*
+> **You copied from a protected location. Pasting here isn't permitted by your organization.**
 
 
 
-!\[Windows APP Copy Paste Blocked](./Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
+![Windows APP Copy Paste Blocked](./Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
 
 
 
@@ -2496,7 +2495,7 @@ The test confirmed that protected corporate data could not be pasted from the Ed
 
 
 
-\## Intune Check-In
+## Intune Check-In
 
 
 
@@ -2512,17 +2511,17 @@ The check-in showed:
 
 
 
-\- Platform: Windows
+- Platform: Windows
 
-\- Management type: All app types
+- Management type: All app types
 
-\- Microsoft Edge: 1 check-in
+- Microsoft Edge: 1 check-in
 
-\- Users checked in: 1
+- Users checked in: 1
 
 
 
-!\[Windows APP Intune Check-In](./Screenshots/10%20-%20Windows%20App%20Protection/108-Windows-APP-Intune-Check-In.png)
+![Windows APP Intune Check-In](./Screenshots/10%20-%20Windows%20App%20Protection/108-Windows-APP-Intune-Check-In.png)
 
 
 
@@ -2530,11 +2529,11 @@ The Windows device remained unmanaged throughout the test, while the protected E
 
 
 
-\---
+---
 
 
 
-\# Troubleshooting and Issues Faced During the Lab
+# Troubleshooting and Issues Faced During the Lab
 
 
 
@@ -2542,7 +2541,7 @@ The lab was not a straight configuration process. A few problems required additi
 
 
 
-\## 1. AD UPN did not match the Microsoft Entra identity
+## 1. AD UPN did not match the Microsoft Entra identity
 
 
 
@@ -2574,7 +2573,7 @@ After that, the users had the correct UPN format for the synchronization workflo
 
 
 
-\## 2. UPN changes were not immediately visible in Microsoft Entra
+## 2. UPN changes were not immediately visible in Microsoft Entra
 
 
 
@@ -2598,7 +2597,7 @@ The synchronization completed successfully and the updated UPNs then appeared in
 
 
 
-\## 3. Ahmed was not suitable for the hybrid identity testing
+## 3. Ahmed was not suitable for the hybrid identity testing
 
 
 
@@ -2610,7 +2609,7 @@ I switched to `areddy` as the main test account because that account was created
 
 
 
-\## 4. BitLocker would not enable because Secure Boot was not enabled
+## 4. BitLocker would not enable because Secure Boot was not enabled
 
 
 
@@ -2634,7 +2633,7 @@ The final result showed the drive fully encrypted with BitLocker protection enab
 
 
 
-\## 5. Intune Tenant Status showed 401 / No Permission
+## 5. Intune Tenant Status showed 401 / No Permission
 
 
 
@@ -2642,7 +2641,7 @@ When I opened:
 
 
 
-\*\*Intune admin center → Tenant administration → Tenant status\*\*
+**Intune admin center → Tenant administration → Tenant status**
 
 
 
@@ -2668,7 +2667,7 @@ At first, I thought this was an Intune permissions issue.
 
 
 
-The problem was related to the licensing available in the tenant. I started the \*\*Microsoft Entra ID P1 Trial\*\*, and after the trial was added, the issue was resolved.
+The problem was related to the licensing available in the tenant. I started the **Microsoft Entra ID P1 Trial**, and after the trial was added, the issue was resolved.
 
 
 
@@ -2676,15 +2675,15 @@ The licensing change and the original 401 error were both captured as evidence.
 
 
 
-!\[Intune Tenant Status showing 401 No Permission](./Screenshots/11%20-%20Troubleshooting/44-Intune%20Tenant%20Status%20No%20Permission%281%29.png)
+![Intune Tenant Status showing 401 No Permission](./Screenshots/11%20-%20Troubleshooting/44-Intune%20Tenant%20Status%20No%20Permission.png)
 
 
 
-!\[Microsoft Entra ID P1 Trial Added](./Screenshots/11%20-%20Troubleshooting/05-%20Entra%20ID%20P1%20Trial%20Added%285%29.png)
+![Microsoft Entra ID P1 Trial Added](./Screenshots/11%20-%20Troubleshooting/05%20-%20Entra%20ID%20P1%20Trial%20Added.png)
 
 
 
-\## 6. Outlook would not open because the account had no Exchange Online license
+## 6. Outlook would not open because the account had no Exchange Online license
 
 
 
@@ -2708,7 +2707,7 @@ The actual problem was that `areddy` did not have the required Exchange Online m
 
 
 
-I assigned \*\*Microsoft 365 Business Basic\*\* to `areddy` and waited for the mailbox to provision.
+I assigned **Microsoft 365 Business Basic** to `areddy` and waited for the mailbox to provision.
 
 
 
@@ -2716,11 +2715,11 @@ After the license and mailbox were available, Outlook started working on the PC 
 
 
 
-!\[Outlook No License Error](./Screenshots/11%20-%20Troubleshooting/109-Outlook-No-License-Error.png)
+![Outlook No License Error](./Screenshots/11%20-%20Troubleshooting/109-Outlook-No-License-Error.png)
 
 
 
-\## 7. Android apps showed "Waiting for install" even though they were already installed
+## 7. Android apps showed "Waiting for install" even though they were already installed
 
 
 
@@ -2728,7 +2727,7 @@ This was one of the bigger troubleshooting issues in the lab.
 
 
 
-The applications were already installed on the Android Work Profile, but Intune was showing states such as \*\*Waiting for install\*\*.
+The applications were already installed on the Android Work Profile, but Intune was showing states such as **Waiting for install**.
 
 
 
@@ -2736,7 +2735,7 @@ During troubleshooting, I removed Authenticator because I thought it might be re
 
 
 
-I then compared the applications actually present on the Android Work Profile with the applications assigned as \*\*Required\*\* in Intune.
+I then compared the applications actually present on the Android Work Profile with the applications assigned as **Required** in Intune.
 
 
 
@@ -2744,7 +2743,7 @@ That is where I found the mismatch.
 
 
 
-\*\*Intune Company Portal was installed on the Android device, but it was not assigned as a Required app in Intune.\*\*
+**Intune Company Portal was installed on the Android device, but it was not assigned as a Required app in Intune.**
 
 
 
@@ -2756,7 +2755,7 @@ I corrected the Required app assignments so that the applications on the Android
 
 
 
-After that, within roughly \*\*5–10 minutes\*\*, the application statuses in Intune changed to \*\*Installed\*\*.
+After that, within roughly **5–10 minutes**, the application statuses in Intune changed to **Installed**.
 
 
 
@@ -2772,11 +2771,11 @@ The practical fix was to compare:
 
 Applications on the device
 
-&#x20;       ↓
+       ↓
 
 Required app assignments in Intune
 
-&#x20;       ↓
+       ↓
 
 Intune installation status
 
@@ -2788,19 +2787,19 @@ rather than immediately removing and reinstalling applications.
 
 
 
-\## 8. Security Defaults had to be disabled before Conditional Access could be enforced
+## 8. Security Defaults had to be disabled before Conditional Access could be enforced
 
 
 
-I created the Android Conditional Access policy in \*\*Report-only\*\* first so I could test it without immediately enforcing it.
+I created the Android Conditional Access policy in **Report-only** first so I could test it without immediately enforcing it.
 
 
 
-The policy could be evaluated in Report-only, but I could not switch it to \*\*On\*\* while Security Defaults were enabled.
+The policy could be evaluated in Report-only, but I could not switch it to **On** while Security Defaults were enabled.
 
 
 
-I disabled \*\*Security Defaults\*\* and then changed the Conditional Access policy to \*\*On\*\*.
+I disabled **Security Defaults** and then changed the Conditional Access policy to **On**.
 
 
 
@@ -2808,7 +2807,7 @@ After that, I was able to continue with the actual Conditional Access enforcemen
 
 
 
-\## 9. The Global Administrator lost access to Microsoft Authenticator
+## 9. The Global Administrator lost access to Microsoft Authenticator
 
 
 
@@ -2828,7 +2827,7 @@ The account was still signed in on `DC01`.
 
 
 
-From there, I gave the `areddy` account the \*\*Global Administrator\*\* role.
+From there, I gave the `areddy` account the **Global Administrator** role.
 
 
 
@@ -2836,11 +2835,11 @@ I then signed in as `areddy`, which already had a working passkey and Authentica
 
 
 
-When I checked the authentication methods for the original account, the \*\*Add authentication method\*\* option was greyed out.
+When I checked the authentication methods for the original account, the **Add authentication method** option was greyed out.
 
 
 
-Instead, I used `areddy` to manage the authentication methods and added \*\*SMS\*\* using my phone number.
+Instead, I used `areddy` to manage the authentication methods and added **SMS** using my phone number.
 
 
 
@@ -2848,7 +2847,7 @@ I then used SMS authentication to recover access to the original administrator a
 
 
 
-!\[Global Administrator Add Authentication Method Greyed Out](./Screenshots/11%20-%20Troubleshooting/110-GlobalAdmin-Add-Auth-Method-Greyed-Out.png)
+![Global Administrator Add Authentication Method Greyed Out](./Screenshots/11%20-%20Troubleshooting/110-GlobalAdmin-Add-Auth-Method-Greyed-Out.png)
 
 
 
@@ -2856,7 +2855,7 @@ The main lesson was that a Global Administrator should not depend on a single au
 
 
 
-\## 10. I could not initially identify the correct Brave uninstall command
+## 10. I could not initially identify the correct Brave uninstall command
 
 
 
@@ -2874,7 +2873,7 @@ I used PowerShell to check the Windows uninstall registry entries and find the i
 
 ```powershell
 
-Get-ItemProperty "HKLM:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\\*","HKLM:\\Software\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\\*","HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\\*" | Where-Object {$\_.DisplayName -like "\*Brave\*"} | Select-Object DisplayName,DisplayVersion,UninstallString
+Get-ItemProperty "HKLM:SoftwareMicrosoftWindowsCurrentVersionUninstall*","HKLM:SoftwareWOW6432NodeMicrosoftWindowsCurrentVersionUninstall*","HKCU:SoftwareMicrosoftWindowsCurrentVersionUninstall*" | Where-Object {$_.DisplayName -like "*Brave*"} | Select-Object DisplayName,DisplayVersion,UninstallString
 
 ```
 
@@ -2884,11 +2883,11 @@ The result showed:
 
 
 
-\- \*\*DisplayName:\*\* Brave
+- **DisplayName:** Brave
 
-\- \*\*DisplayVersion:\*\* `151.1.93.134`
+- **DisplayVersion:** `151.1.93.134`
 
-\- \*\*UninstallString:\*\* the registered Brave `setup.exe` uninstall path
+- **UninstallString:** the registered Brave `setup.exe` uninstall path
 
 
 
@@ -2898,7 +2897,7 @@ I then used:
 
 ```text
 
-"C:\\Program Files\\BraveSoftware\\Brave-Browser\\Application\\151.1.93.134\\Installer\\setup.exe" --uninstall
+"C:Program FilesBraveSoftwareBrave-BrowserApplication151.1.93.134Installersetup.exe" --uninstall
 
 ```
 
@@ -2912,11 +2911,11 @@ I used the uninstall information already registered in Windows instead of guessi
 
 
 
-\---
+---
 
 
 
-\# Lessons Learned
+# Lessons Learned
 
 
 
@@ -2932,7 +2931,7 @@ Working through the lab on real VMs and a real Android device made that much eas
 
 
 
-\## 1. Identity has to be sorted out first
+## 1. Identity has to be sorted out first
 
 
 
@@ -2944,7 +2943,7 @@ The main account I used, `areddy`, started in on-premises Active Directory and t
 
 
 
-!\[Hybrid Join and PRT Verification](./Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success%281%29.png)
+![Hybrid Join and PRT Verification](./Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success.png)
 
 
 
@@ -2952,7 +2951,7 @@ Seeing `AzureAdPrt : YES` and the `areddy@thousiflab.onmicrosoft.com` identity i
 
 
 
-\## 2. Enrollment, management and compliance are separate things
+## 2. Enrollment, management and compliance are separate things
 
 
 
@@ -2968,19 +2967,19 @@ The Windows client went through several stages:
 
 Active Directory
 
-&#x20;     ↓
+     ↓
 
 Hybrid Microsoft Entra Join
 
-&#x20;     ↓
+     ↓
 
 Intune Enrollment
 
-&#x20;     ↓
+     ↓
 
 Security Configuration
 
-&#x20;     ↓
+     ↓
 
 Compliance
 
@@ -2988,7 +2987,7 @@ Compliance
 
 
 
-!\[WIN11-CLIENT01 in Intune](./Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device%281%29.png)
+![WIN11-CLIENT01 in Intune](./Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device.png)
 
 
 
@@ -2996,7 +2995,7 @@ Keeping those stages separate helped me understand what each part was actually d
 
 
 
-\## 3. I stopped treating the Intune portal as the final answer
+## 3. I stopped treating the Intune portal as the final answer
 
 
 
@@ -3016,11 +3015,11 @@ I started checking three things instead:
 
 Intune assignment
 
-&#x20;       ↓
+       ↓
 
 Endpoint state
 
-&#x20;       ↓
+       ↓
 
 Actual behavior
 
@@ -3032,7 +3031,7 @@ That approach was useful for security policies, BitLocker, compliance and applic
 
 
 
-\## 4. Configuration, compliance and Conditional Access have different jobs
+## 4. Configuration, compliance and Conditional Access have different jobs
 
 
 
@@ -3052,7 +3051,7 @@ Conditional Access then uses that result when deciding whether access should be 
 
 
 
-!\[Conditional Access Noncompliant Block](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
+![Conditional Access Noncompliant Block](./Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
 
 
 
@@ -3060,7 +3059,7 @@ The Android test made this especially easy to see because I deliberately made th
 
 
 
-\## 5. Windows and Android Conditional Access were tested differently
+## 5. Windows and Android Conditional Access were tested differently
 
 
 
@@ -3068,11 +3067,11 @@ I did not test both platforms in the same way.
 
 
 
-For \*\*Windows\*\*, I kept `WIN11-CA-Require-Compliant-Device` in \*\*Report-only\*\* mode. I used a controlled compliance failure to see the result change from Success to Failure and then back to Success after compliance was restored. I did not enforce the Windows policy.
+For **Windows**, I kept `WIN11-CA-Require-Compliant-Device` in **Report-only** mode. I used a controlled compliance failure to see the result change from Success to Failure and then back to Success after compliance was restored. I did not enforce the Windows policy.
 
 
 
-For \*\*Android\*\*, I started in Report-only but then enabled `CA-Android-Require-Compliant-Device`. I tested a compliant device, deliberately changed the minimum OS requirement from 12 to 17 so the Android 16 device became noncompliant, confirmed that access was blocked, and then restored the requirement to 12 and tested access again.
+For **Android**, I started in Report-only but then enabled `CA-Android-Require-Compliant-Device`. I tested a compliant device, deliberately changed the minimum OS requirement from 12 to 17 so the Android 16 device became noncompliant, confirmed that access was blocked, and then restored the requirement to 12 and tested access again.
 
 
 
@@ -3080,7 +3079,7 @@ That difference was useful because it showed me both the evaluation side of Cond
 
 
 
-\## 6. Security controls make more sense when you test the failure case
+## 6. Security controls make more sense when you test the failure case
 
 
 
@@ -3112,7 +3111,7 @@ That was much more useful than just seeing a policy configured in the portal.
 
 
 
-\## 7. The endpoint itself matters just as much as the policy
+## 7. The endpoint itself matters just as much as the policy
 
 
 
@@ -3128,7 +3127,7 @@ The VM also needed the right underlying configuration, including Secure Boot.
 
 
 
-!\[BitLocker Final Status](./Screenshots/05%20-%20BitLocker%20Device%20Encryption/40-BitLocker%20Final%20Status%281%29.png)
+![BitLocker Final Status](./Screenshots/05%20-%20BitLocker%20Device%20Encryption/06%20-%20Final%20Verification/43-BitLocker%20Control%20Panel%20On.png)
 
 
 
@@ -3140,7 +3139,7 @@ The BitLocker policy was part of the management layer, while the TPM protector a
 
 
 
-\## 8. Portal status and actual device state can be different
+## 8. Portal status and actual device state can be different
 
 
 
@@ -3160,11 +3159,11 @@ Instead of immediately removing and reinstalling things, I started comparing:
 
 What is on the device
 
-&#x20;       ↓
+       ↓
 
 What Intune assigned
 
-&#x20;       ↓
+       ↓
 
 What Intune is reporting
 
@@ -3176,7 +3175,7 @@ That way of looking at the problem was much more useful than changing settings a
 
 
 
-\## 9. Licensing can look like an application problem
+## 9. Licensing can look like an application problem
 
 
 
@@ -3196,7 +3195,7 @@ That was a good reminder that application troubleshooting sometimes starts with 
 
 
 
-\## 10. BYOD does not always require full device management
+## 10. BYOD does not always require full device management
 
 
 
@@ -3212,7 +3211,7 @@ On Windows, `CLIENT02` stayed outside the domain and Intune MDM, but the protect
 
 
 
-!\[Windows MAM Copy/Paste Block](./Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
+![Windows MAM Copy/Paste Block](./Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
 
 
 
@@ -3220,11 +3219,11 @@ Brave remained unmanaged, but corporate data copied from the protected Edge sess
 
 
 
-That made the difference between \*\*device management\*\* and \*\*application/data protection\*\* much clearer to me.
+That made the difference between **device management** and **application/data protection** much clearer to me.
 
 
 
-\## 11. Real data-transfer tests are stronger than configuration screenshots
+## 11. Real data-transfer tests are stronger than configuration screenshots
 
 
 
@@ -3236,7 +3235,7 @@ On Android, protected data could move between managed applications but was block
 
 
 
-!\[Android MAM Data Transfer Block](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
+![Android MAM Data Transfer Block](./Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
 
 
 
@@ -3248,7 +3247,7 @@ Those tests told me much more than simply looking at the policy settings.
 
 
 
-\## 12. Administrator recovery needs to be planned before there is a problem
+## 12. Administrator recovery needs to be planned before there is a problem
 
 
 
@@ -3272,7 +3271,7 @@ That made the importance of a second admin and more than one recovery method ver
 
 
 
-\## 13. The order of the project matters
+## 13. The order of the project matters
 
 
 
@@ -3288,39 +3287,39 @@ The overall path became:
 
 Active Directory
 
-&#x20;       ↓
+       ↓
 
 Microsoft Entra ID
 
-&#x20;       ↓
+       ↓
 
 Entra Connect
 
-&#x20;       ↓
+       ↓
 
 Hybrid Join
 
-&#x20;       ↓
+       ↓
 
 Intune Enrollment
 
-&#x20;       ↓
+       ↓
 
 Security
 
-&#x20;       ↓
+       ↓
 
 Compliance
 
-&#x20;       ↓
+       ↓
 
 Conditional Access
 
-&#x20;       ↓
+       ↓
 
 Application Deployment
 
-&#x20;       ↓
+       ↓
 
 App Protection
 
@@ -3332,7 +3331,7 @@ Once I worked through it in that order, the later stages made much more sense be
 
 
 
-\## 14. The biggest learning came from seeing everything work together
+## 14. The biggest learning came from seeing everything work together
 
 
 
@@ -3376,11 +3375,11 @@ That is much easier to understand after actually building and testing it than it
 
 
 
-\---
+---
 
 
 
-\# Final Takeaway
+# Final Takeaway
 
 
 
@@ -3400,17 +3399,17 @@ This lab gave me a much clearer picture of how a hybrid endpoint-management envi
 
 
 
-\---
+---
 
 
 
-\# Repository Structure
+# Repository Structure
 
 
 
 ```text
 
-Microsoft Intune \& Entra ID Hybrid Endpoint Management Lab/
+Microsoft Intune & Entra ID Hybrid Endpoint Management Lab/
 
 │
 
@@ -3420,13 +3419,13 @@ Microsoft Intune \& Entra ID Hybrid Endpoint Management Lab/
 
 ├── Documentation/
 
-│   ├── 01 - Identity \& Active Directory.md
+│   ├── 01 - Identity & Active Directory.md
 
-│   ├── 02 - Entra Connect \& SSO.md
+│   ├── 02 - Entra Connect & SSO.md
 
-│   ├── 03 - Intune Enrollment \& Management.md
+│   ├── 03 - Intune Enrollment & Management.md
 
-│   ├── 04 - Endpoint Security \& Firewall.md
+│   ├── 04 - Endpoint Security & Firewall.md
 
 │   ├── 05 - BitLocker Device Encryption.md
 
@@ -3448,13 +3447,13 @@ Microsoft Intune \& Entra ID Hybrid Endpoint Management Lab/
 
 ├── Screenshots/
 
-│   ├── 01 - Identity \& Active Directory/
+│   ├── 01 - Identity & Active Directory/
 
-│   ├── 02 - Entra Connect \& SSO/
+│   ├── 02 - Entra Connect & SSO/
 
-│   ├── 03 - Intune Enrollment \& Management/
+│   ├── 03 - Intune Enrollment & Management/
 
-│   ├── 04 - Endpoint Security \& Firewall/
+│   ├── 04 - Endpoint Security & Firewall/
 
 │   ├── 05 - BitLocker Device Encryption/
 
