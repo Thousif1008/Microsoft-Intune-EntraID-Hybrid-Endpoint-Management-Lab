@@ -4,7 +4,7 @@ These are the main issues I ran into while building and testing the lab. I kept 
 
 ## 1. AD UPN did not match the Microsoft Entra identity
 
-At the beginning, the users in Active Directory were using the `@thousiflab.com` UPN, while the Microsoft Entra accounts were using `@thousiflab.onmicrosoft.com`.
+At the beginning, the users in Active Directory were using the `@thousiflab.com` UPN, while the Microsoft Entra accounts were using the `@thousiflab.onmicrosoft.com`.
 
 The on-premises account was still using the @thousiflab.com suffix while the Microsoft Entra identity used the @thousiflab.onmicrosoft.com namespace.
 
@@ -59,9 +59,9 @@ I found that the problem was related to the licensing available in the tenant. I
 
 ### Evidence
 
-![Intune Tenant Status showing 401 No Permission](./11%20-%20Troubleshooting/44-Intune%20Tenant%20Status%20No%20Permission%281%29.png)
+![Intune Tenant Status showing 401 No Permission](../Screenshots/11%20-%20Troubleshooting/44-Intune%20Tenant%20Status%20No%20Permission.png)
 
-![Microsoft Entra ID P1 Trial Added](./11%20-%20Troubleshooting/05-%20Entra%20ID%20P1%20Trial%20Added%285%29.png)
+![Microsoft Entra ID P1 Trial Added](../Screenshots/11%20-%20Troubleshooting/05%20-%20Entra%20ID%20P1%20Trial%20Added.png)
 
 ## 6. Outlook would not open because the account had no Exchange Online license
 
@@ -81,7 +81,7 @@ After the license and mailbox were available, Outlook started working on the PC 
 
 ### Evidence
 
-![Outlook No License Error](./11%20-%20Troubleshooting/109-Outlook-No-License-Error.png)
+![Outlook No License Error](../Screenshots/11%20-%20Troubleshooting/109-Outlook-No-License-Error.png)
 
 This took some time to figure out because it initially looked like an Outlook or authentication problem, but the actual cause was the missing Exchange Online license.
 
@@ -141,7 +141,7 @@ I then used SMS authentication to recover access to the original administrator a
 
 ### Evidence
 
-![Global Administrator Add Authentication Method Greyed Out](./11%20-%20Troubleshooting/110-GlobalAdmin-Add-Auth-Method-Greyed-Out.png)
+![Global Administrator Add Authentication Method Greyed Out](../Screenshots/11%20-%20Troubleshooting/110-GlobalAdmin-Add-Auth-Method-Greyed-Out.png)
 
 I was able to recover the account using the second Global Administrator and SMS authentication.
 

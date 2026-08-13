@@ -10,11 +10,11 @@ The policy was assigned to:
 
 `GRP-Intune-Users`
 
-![Windows APP Basics](./10%20-%20Windows%20App%20Protection/101-Windows-APP-Basics.png)
+![Windows APP Basics](../Screenshots/10%20-%20Windows%20App%20Protection/101-Windows-APP-Basics.png)
 
 The policy was created for Microsoft Edge. The minimum OS version was left unconfigured.
 
-![Windows APP Target Apps](./10%20-%20Windows%20App%20Protection/102-Windows-APP-Target-Apps.png)
+![Windows APP Target Apps](../Screenshots/10%20-%20Windows%20App%20Protection/102-Windows-APP-Target-Apps.png)
 
 The main data protection settings included:
 
@@ -36,7 +36,7 @@ The main data protection settings included:
 - **Org data notifications:** Allow
 - **Start Microsoft Tunnel connection on app-launch:** No
 
-![Windows APP Data Protection](./10%20-%20Windows%20App%20Protection/103-Windows-APP-Data-Protection.png)
+![Windows APP Data Protection](../Screenshots/10%20-%20Windows%20App%20Protection/103-Windows-APP-Data-Protection.png)
 
 Health checks were also configured:
 
@@ -45,11 +45,11 @@ Health checks were also configured:
 - **Maximum allowed device threat level:** Secured → Block access
 - **Minimum OS:** Not configured
 
-![Windows APP Health Checks](./10%20-%20Windows%20App%20Protection/104-Windows-APP-Health-Checks.png)
+![Windows APP Health Checks](../Screenshots/10%20-%20Windows%20App%20Protection/104-Windows-APP-Health-Checks.png)
 
 The final policy review showed the policy name, Windows platform, and Microsoft Edge as the protected application.
 
-![Windows APP Policy Review](./10%20-%20Windows%20App%20Protection/105-Windows-APP-Policy-Review.png)
+![Windows APP Policy Review](../Screenshots/10%20-%20Windows%20App%20Protection/105-Windows-APP-Policy-Review.png)
 
 ## CLIENT02 BYOD Test
 
@@ -73,7 +73,7 @@ After signing out of the organizational Edge session, the download succeeded.
 
 The restriction applied to the protected work session, while the Windows device itself remained unmanaged.
 
-![Windows APP Download Blocked](./10%20-%20Windows%20App%20Protection/106-Windows-APP-Download-Blocked.png)
+![Windows APP Download Blocked](../Screenshots/10%20-%20Windows%20App%20Protection/106-Windows-APP-Download-Blocked.png)
 
 ## Copy and Paste Test
 
@@ -85,7 +85,7 @@ The paste was blocked with:
 
 > **"You copied from a protected location. Pasting here isn't permitted by your organization."**
 
-![Windows APP Copy Paste Blocked](./10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
+![Windows APP Copy Paste Blocked](../Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
 
 The test confirmed that protected corporate data could not be pasted from the Edge work session into unmanaged Brave.
 
@@ -100,7 +100,7 @@ The check-in showed:
 - **Microsoft Edge:** 1 check-in
 - **Users checked in:** 1
 
-![Windows APP Intune Check-In](./10%20-%20Windows%20App%20Protection/108-Windows-APP-Intune-Check-In.png)
+![Windows APP Intune Check-In](../Screenshots/10%20-%20Windows%20App%20Protection/108-Windows-APP-Intune-Check-In.png)
 
 ## Result
 

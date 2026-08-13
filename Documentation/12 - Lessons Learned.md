@@ -22,7 +22,7 @@ The main account I used, `areddy`, started in on-premises Active Directory and t
 
 
 
-![Hybrid Join and PRT Verification](./03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success%281%29.png)
+![Hybrid Join and PRT Verification](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success.png)
 
 
 
@@ -62,7 +62,7 @@ The Windows client went through several stages:
 
 
 
-![WIN11-CLIENT01 in Intune](./03%20-%20Device%20Management/30-Intune%20Client%20Device%281%29.png)
+![WIN11-CLIENT01 in Intune](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device.png)
 
 
 
@@ -122,7 +122,7 @@ Conditional Access then uses that result when evaluating access.
 
 
 
-![Conditional Access Noncompliant Block](./04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
+![Conditional Access Noncompliant Block](../Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
 
 
 
@@ -186,7 +186,7 @@ The Intune policy was not the only thing involved. The VM also needed the right 
 
 
 
-![BitLocker Final Status](./04%20-%20Encryption%20%26%20Protection/40-BitLocker%20Final%20Status%281%29.png)
+![BitLocker Final Status](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/06%20-%20Final%20Verification/43-BitLocker%20Control%20Panel%20On.png)
 
 
 
@@ -270,7 +270,7 @@ On Windows, `CLIENT02` stayed outside the domain and Intune MDM, but the protect
 
 
 
-![Windows MAM Copy/Paste Block](./10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
+![Windows MAM Copy/Paste Block](../Screenshots/10%20-%20Windows%20App%20Protection/107-Windows-APP-Copy-Paste-Blocked.png)
 
 
 
@@ -294,7 +294,7 @@ On Android, protected data could move between managed applications but was block
 
 
 
-![Android MAM Data Transfer Block](./06%20-%20App Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
+![Android MAM Data Transfer Block](../Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
 
 
 
@@ -442,4 +442,3 @@ The troubleshooting was useful, but the bigger lesson was learning to build the 
 
 
 This lab gave me a much clearer picture of how a hybrid endpoint-management environment works in practice.
-

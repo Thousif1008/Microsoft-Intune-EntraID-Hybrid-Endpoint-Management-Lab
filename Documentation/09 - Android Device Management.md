@@ -287,7 +287,7 @@ The policy details showed:
 - Device platform: Android
 - Client apps: 1 included
 
-![Android Conditional Access Policy Review](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/76-Android%20Conditional%20Access%20Policy%20Review.png)
+![Android Conditional Access Policy Review](../Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/76-Android%20Conditional%20Access%20Policy%20Review.png)
 
 *Figure 15 — CA-Android-Require-Compliant-Device configured for Android device compliance.*
 
@@ -433,7 +433,7 @@ The status was:
 
 **Installed**
 
-![Android Outlook Installation Status](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/79-Android%20Outlook%20Installation%20Status.png)
+![Android Outlook Installation Status](../Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/79-Android-Outlook-Installation-Status.png)
 
 *Figure 25 — Intune reporting Microsoft Outlook as installed on the Android device.*
 
