@@ -15,7 +15,7 @@ The account details were:
 - **User type:** Member 
 - **Account status:** Enabled 
  
-![Ahmed Khan Entra User](./01%20-%20Entra%20ID%20User%20Management/10%20-%20Ahmed%20Khan%20Entra%20User%282%29.png) 
+![Ahmed Khan Entra User](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/01%20-%20Entra%20ID%20User%20Management/10%20-%20Ahmed%20Khan%20Entra%20User.png)
  
 *Figure 1 — Ahmed Khan user account in Microsoft Entra ID.* 
  
@@ -31,7 +31,7 @@ The selected group was:
  
 `GRP-Intune-Users` 
  
-![Entra Device Join Group Selection](./02%20-%20Entra%20Device%20Join%20%26%20Registration/07%20-%20Entra%20Device%20Join%20Group%20Selection%283%29.png) 
+![Entra Device Join Group Selection](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/02%20-%20Entra%20Device%20Join%20%26%20Registration/07%20-%20Entra%20Device%20Join%20Group%20Selection.png)
  
 *Figure 2 — Group selected for Microsoft Entra device joining.* 
  
@@ -43,13 +43,13 @@ The device join settings showed the following values:
 - **Require MFA to register or join devices with Microsoft Entra:** No 
 - **Maximum number of devices per user:** 50 
  
-![Entra Device Join Settings](./02%20-%20Entra%20Device%20Join%20%26%20Registration/08%20-%20Entra%20Device%20Join%20Settings%283%29.png) 
+![Entra Device Join Settings](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/02%20-%20Entra%20Device%20Join%20%26%20Registration/08%20-%20Entra%20Device%20Join%20Settings.png) 
  
 *Figure 3 — Microsoft Entra device join and registration settings.* 
  
 The Windows client was also checked from **Settings → Accounts → Access work or school**. At this point, the machine was connected to the local `thousiflab.com` Active Directory domain. 
  
-![Windows 11 Current State](./02%20-%20Entra%20Device%20Join%20%26%20Registration/09%20-%20Windows%2011%20Current%20State%283%29.png) 
+![Windows 11 Current State](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/02%20-%20Entra%20Device%20Join%20%26%20Registration/09%20-%20Windows%2011%20Current%20State.png)
  
 *Figure 4 — Windows client connected to the on-premises Active Directory domain.* 
  
@@ -67,7 +67,7 @@ with a quantity of:
  
 **25 licenses** 
  
-![Entra ID P1 Trial Added](./03%20-%20Entra%20ID%20Licensing/05%20-%20Entra%20ID%20P1%20Trial%20Added%284%29.png) 
+![Entra ID P1 Trial Added](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/03%20-%20Entra%20ID%20Licensing/05%20-%20Entra%20ID%20P1%20Trial%20Added.png) 
  
 *Figure 5 — Microsoft Entra ID P1 trial added to the tenant.* 
  
@@ -89,7 +89,7 @@ The suffix was configured through:
  
 **Active Directory Domains and Trusts → UPN Suffixes** 
  
-![AD UPN Suffix Configured](./04%20-%20UPN%20Suffix/22-AD%20UPN%20Suffix%20Configured%283%29.png) 
+![AD UPN Suffix Configured](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/04%20-%20UPN%20Suffix/22-AD%20UPN%20Suffix%20Configured.png) 
  
 *Figure 6 — `thousiflab.onmicrosoft.com` added as an alternative UPN suffix.* 
  
@@ -109,7 +109,7 @@ The Active Directory account used:
  
 The account was located in the Enterprise user structure in Active Directory. 
  
-![AD User UPN Before Change](./05%20-%20AD%20User%20Configuration/23-AD%20User%20UPN%20Before%20Change%283%29.png) 
+![AD User UPN Before Change](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/05%20-%20AD%20User%20Configuration/23-AD%20User%20UPN%20Before%20Change.png) 
  
 *Figure 7 — Arjun Reddy's Active Directory account before the UPN change.* 
  
@@ -123,7 +123,7 @@ The existing AD users using the old `@thousiflab.com` suffix were prepared for t
  
 Before making the change, I checked the existing user UPNs with PowerShell. 
  
-![AD Users Before UPN Update](./06%20-%20UPN%20Update/24-AD%20Users%20UPN%20Before%20Update%20Script%284%29.png) 
+![AD Users Before UPN Update](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/06%20-%20UPN%20Update/24-AD%20Users%20UPN%20Before%20Update%20Script.png) 
  
 *Figure 8 — Active Directory users and their original UPN values before the update.* 
  
@@ -159,7 +159,7 @@ I checked the users again after the update. The accounts now showed the new:
  
 suffix. 
  
-![AD Users After UPN Update](./07%20-%20UPN%20Verification/25-AD%20Users%20UPN%20After%20Update%283%29.png) 
+![AD Users After UPN Update](../Screenshots/01%20-%20Identity%20%26%20Active%20Directory/07%20-%20UPN%20Verification/25-AD%20Users%20UPN%20After%20Update.png) 
  
 *Figure 9 — Active Directory users after the PowerShell UPN update.* 
  

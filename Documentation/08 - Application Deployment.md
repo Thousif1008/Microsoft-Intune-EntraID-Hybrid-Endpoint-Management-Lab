@@ -22,7 +22,7 @@ The original installer was:
 
 The package wizard identified the application as a Windows Win32 app.
 
-![Brave Win32 App Package](./01%20-%20Brave/55-Brave%20Win32%20App%20Package.png)
+![Brave Win32 App Package](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/55-Brave%20Win32%20App%20Package.png)
 
 *Figure 1 — Brave Browser packaged as a Win32 application for Intune.*
 
@@ -69,7 +69,7 @@ The rule used:
 
 The detection rule pointed to the Brave Browser installation directory.
 
-![Brave Detection Rule](./01%20-%20Brave/56-Brave%20Detection%20Rule.png)
+![Brave Detection Rule](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/56-Brave%20Detection%20Rule.png)
 
 *Figure 2 — File detection rule configured for `brave.exe` in the Brave installation path.*
 
@@ -81,7 +81,7 @@ Before the deployment, I checked the Windows client to make sure Brave was not a
 
 The browser was not present in the installed applications on the machine.
 
-![Brave Not Installed](./01%20-%20Brave/57-Brave%20Not%20Installed.png)
+![Brave Not Installed](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/57-Brave%20Not%20Installed.png)
 
 *Figure 3 — Brave was not installed on the Windows client before the Intune deployment.*
 
@@ -99,7 +99,7 @@ The assignment was active and configured for:
 - **Deadline:** As soon as possible
 - **Available uninstall:** Disabled
 
-![Brave Deployment Assignment](./01%20-%20Brave/58-Brave%20Deployment%20Assignment.png)
+![Brave Deployment Assignment](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/58-Brave%20Deployment%20Assignment.png)
 
 *Figure 4 — Brave Browser assigned as a required application to GRP-Intune-Users.*
 
@@ -113,7 +113,7 @@ The review page showed the package, application information, installation comman
 
 The deployment was configured as a required Win32 application for the target group.
 
-![Brave Deployment Review](./01%20-%20Brave/59-Brave%20Deployment%20Review.png)
+![Brave Deployment Review](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/59-Brave%20Deployment%20Review.png)
 
 *Figure 5 — Final review of the Brave Browser Win32 application before creation.*
 
@@ -141,7 +141,7 @@ The installed application was shown as:
 
 with the installed Brave browser version visible on the client.
 
-![Brave Successfully Installed](./01%20-%20Brave/60-Brave%20Successfully%20Installed.png)
+![Brave Successfully Installed](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/60-Brave%20Successfully%20Installed.png)
 
 *Figure 6 — Brave Browser installed on the Windows client.*
 
@@ -167,7 +167,7 @@ The application status was:
 
 **Installed**
 
-![Brave Intune Deployment Successful](./01%20-%20Brave/61-Brave%20Intune%20Deployment%20Successful.png)
+![Brave Intune Deployment Successful](../Screenshots/08%20-%20Application%20Deployment/01%20-%20Brave/61-Brave%20Intune%20Deployment%20Successful.png)
 
 *Figure 7 — Intune reporting Brave Browser as installed on WIN11-CLIENT01.*
 

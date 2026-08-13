@@ -30,7 +30,7 @@ Ahmed Khan was present in Microsoft Entra ID as an enabled Member account.
 
 At this stage, the account had no assigned roles, applications, or licenses.
 
-![Ahmed Khan - Microsoft Entra ID](./01%20-%20Entra%20Connect%20Configuration/01%20-%20Ahmed%20Khan%20Entra%20ID%20User%281%29.png)
+![Ahmed Khan - Microsoft Entra ID](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/01%20-%20Entra%20Connect%20Configuration/01%20-%20Ahmed%20Khan%20Entra%20ID%20User.png)
 
 ### GRP-Intune-Users
 
@@ -38,7 +38,7 @@ The `GRP-Intune-Users` group was checked and Ahmed Khan was shown as a direct me
 
 I reused this group for the Intune assignments later in the lab.
 
-![GRP-Intune-Users - Ahmed Khan Member](./01%20-%20Entra%20Connect%20Configuration/02%20-%20GRP-Intune-Users%20Ahmed%20Khan%20Member%281%29.png)
+![GRP-Intune-Users - Ahmed Khan Member](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/01%20-%20Entra%20Connect%20Configuration/02%20-%20GRP-Intune-Users%20Ahmed%20Khan%20Member.png)
 
 ### Administrator roles
 
@@ -51,7 +51,7 @@ The account had the following roles:
 - Global Administrator
 - Intune Administrator
 
-![Thousif Raza Mohammed - Assigned Roles](./01%20-%20Entra%20Connect%20Configuration/03-%20Thousif%20Raza%20Assigned%20Global%20and%20Intune%20Administrator%20Roles%281%29.png)
+![Thousif Raza Mohammed - Assigned Roles](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/01%20-%20Entra%20Connect%20Configuration/03%20-%20Thousif%20Raza%20Assigned%20Global%20and%20Intune%20Administrator%20Roles.png)
 
 ### Hybrid Microsoft Entra Join configuration
 
@@ -59,7 +59,7 @@ Microsoft Entra Connect was configured for Hybrid Microsoft Entra Join.
 
 The wizard completed the Hybrid Microsoft Entra Join configuration and indicated that additional steps were still required on the Windows device before the device itself would complete the Hybrid Join process.
 
-![Entra Connect Hybrid Join Configuration](./01%20-%20Entra%20Connect%20Configuration/14-Entra%20Connect%20Hybrid%20Join%20Configuration%281%29.png)
+![Entra Connect Hybrid Join Configuration](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/01%20-%20Entra%20Connect%20Configuration/14-Entra%20Connect%20Hybrid%20Join%20Configuration.png)
 
 ---
 
@@ -71,7 +71,7 @@ I then checked the synchronization service on the server.
 
 The **Microsoft Azure AD Sync** service was running and configured to start automatically.
 
-![Microsoft Azure AD Sync service](./02%20-%20Synchronization/12-Entra%20Connect%20Sync%20Status%281%29.png)
+![Microsoft Azure AD Sync service](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/02%20-%20Synchronization/12-Entra%20Connect%20Sync%20Status.png)
 
 ### Delta synchronization
 
@@ -89,7 +89,7 @@ Result
 Success
 ~~~
 
-![Entra Connect Delta Sync](./02%20-%20Synchronization/13-Entra%20Connect%20Delta%20Sync%281%29.png)
+![Entra Connect Delta Sync](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/02%20-%20Synchronization/13-Entra%20Connect%20Delta%20Sync.png)
 
 ### Synchronization verification
 
@@ -115,7 +115,7 @@ Examples shown included:
 
 A further delta synchronization was performed and also returned **Success**.
 
-![Entra Connect Sync Success](./02%20-%20Synchronization/27-Entra%20Connect%20Sync%20Success%281%29.png)
+![Entra Connect Sync Success](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/02%20-%20Synchronization/27-Entra%20Connect%20Sync%20Success.png)
 
 The delta cycle completed successfully, and the users were synchronized to Microsoft Entra ID.
 
@@ -126,7 +126,7 @@ The delta cycle completed successfully, and the users were synchronized to Micro
 The Windows client was checked with:
 
 ~~~cmd
-dsregcmd /status
+dsregcmd status
 ~~~
 
 ### Before Hybrid Microsoft Entra Join
@@ -142,14 +142,14 @@ DomainName : THOUSIFLAB
 
 At this point, the Windows machine was joined to the local Active Directory domain but was not yet Microsoft Entra joined.
 
-![dsregcmd Before Entra Join](./03%20-%20SSO%20%26%20PRT%20Verification/11-DSREGCMD%20Before%20Entra%20Join%281%29.png)
+![dsregcmd Before Entra Join](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/11-DSREGCMD%20Before%20Entra%20Join.png)
 
 ### Automatic Device Join
 
 I manually ran the Windows Workplace Join task:
 
 ~~~cmd
-schtasks /Run /TN "\Microsoft\Windows\Workplace Join\Automatic-Device-Join"
+schtasks Run TN "\Microsoft\Windows\Workplace Join\Automatic-Device-Join"
 ~~~
 
 Windows returned:
@@ -159,11 +159,11 @@ SUCCESS: Attempted to run the scheduled task
 "\Microsoft\Windows\Workplace Join\Automatic-Device-Join".
 ~~~
 
-![Automatic Device Join Task](./03%20-%20SSO%20%26%20PRT%20Verification/15-Automatic%20Device%20Join%20Task%281%29.png)
+![Automatic Device Join Task](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/04%20-%20Hybrid%20Join/15-Automatic%20Device%20Join%20Task.png)
 
 ### Hybrid Join confirmed locally
 
-`dsregcmd /status` was run again after the scheduled task completed.
+`dsregcmd status` was run again after the scheduled task completed.
 
 The device now reported:
 
@@ -176,11 +176,11 @@ DomainName : THOUSIFLAB
 
 The device was now Hybrid Microsoft Entra joined.
 
-![dsregcmd Hybrid Joined](./03%20-%20SSO%20%26%20PRT%20Verification/16-DSREGCMD%20Hybrid%20Joined%281%29.png)
+![dsregcmd Hybrid Joined](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/16-DSREGCMD%20Hybrid%20Joined.png)
 
 ### Primary Refresh Token verification
 
-The SSO state was then checked in the same `dsregcmd /status` output.
+The SSO state was then checked in the same `dsregcmd status` output.
 
 The important value was:
 
@@ -197,7 +197,7 @@ KeySignTest : PASSED
 
 `AzureAdPrt : YES` and `KeySignTest : PASSED` confirmed the cloud SSO state for `areddy`.
 
-![PRT and SSO Verification](./03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success%281%29.png)
+![PRT and SSO Verification](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/03%20-%20SSO%20%26%20PRT%20Verification/26-DSREGCMD%20PRT%20Success.png)
 
 One value remained:
 
@@ -228,7 +228,7 @@ The device information showed:
 - Owner: None
 - MDM: None
 
-![WIN11-CLIENT01 - Hybrid Microsoft Entra Joined](./04%20-%20Hybrid%20Join/17-Entra%20Client01%20Hybrid%20Joined%281%29.png)
+![WIN11-CLIENT01 - Hybrid Microsoft Entra Joined](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/04%20-%20Hybrid%20Join/17-Entra%20Client01%20Hybrid%20Joined.png)
 
 The Entra admin center also showed the device as **Microsoft Entra hybrid joined**.
 
@@ -240,7 +240,7 @@ I also checked the `Automatic-Device-Join` task under:
 
 The task was present and showed the successful execution used during the join process.
 
-![Automatic Device Join Task](./04%20-%20Hybrid%20Join/15-Automatic%20Device%20Join%20Task%281%29.png)
+![Automatic Device Join Task](../Screenshots/02%20-%20Entra%20Connect%20%26%20SSO/04%20-%20Hybrid%20Join/15-Automatic%20Device%20Join%20Task.png)
 
 The client initially reported:
 

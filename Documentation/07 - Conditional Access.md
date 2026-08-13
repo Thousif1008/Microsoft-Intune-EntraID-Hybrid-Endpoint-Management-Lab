@@ -25,7 +25,7 @@ The policy targeted:
 - **Requirement for access:** Require device to be marked as compliant
 - **Client apps:** 1 included
 
-![Conditional Access Policy Configuration](./01%20-%20Policy%20Configuration/49-Conditional%20Access%20Policy%20Configuration.png)
+![Conditional Access Policy Configuration](../Screenshots/07%20-%20Conditional%20Access/01%20-%20Policy%20Configuration/49-Conditional%20Access%20Policy%20Configuration.png)
 
 *Figure 1 — WIN11-CA-Require-Compliant-Device configured in Report-only mode with the RequireCompliantDevice grant control.*
 
@@ -45,7 +45,7 @@ The report-only evaluation showed:
 
 **Result:** `Report-only: Success`
 
-![Conditional Access Report-Only Success](./02%20-%20Policy%20Validation/50-Conditional%20Access%20Report-Only%20Success.png)
+![Conditional Access Report-Only Success](../Screenshots/07%20-%20Conditional%20Access/02%20-%20Policy%20Validation/50-Conditional%20Access%20Report-Only%20Success.png)
 
 *Figure 2 — Conditional Access evaluated successfully in Report-only mode.*
 
@@ -72,7 +72,7 @@ The user shown for the device was:
 
 `Arjun Reddy`
 
-![WIN11-CLIENT01 Noncompliant](./03%20-%20Noncompliant%20Test/51-WIN11-CLIENT01%20Noncompliant.png)
+![WIN11-CLIENT01 Noncompliant](../Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/51-WIN11-CLIENT01%20Noncompliant.png)
 
 *Figure 3 — WIN11-CLIENT01 reported as noncompliant.*
 
@@ -90,7 +90,7 @@ The result changed to:
 
 **Report-only: Failure**
 
-![Conditional Access Noncompliant Failure](./03%20-%20Noncompliant%20Test/52-Conditional%20Access%20Noncompliant%20Failure.png)
+![Conditional Access Noncompliant Failure](../Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/52-Conditional%20Access%20Noncompliant%20Failure.png)
 
 *Figure 4 — Conditional Access evaluation failed when the device was noncompliant.*
 
@@ -102,7 +102,7 @@ The device was then brought back into a compliant state.
 
 The compliance report showed the device as compliant again.
 
-![WIN11-CLIENT01 Compliance Restored](./03%20-%20Noncompliant%20Test/53-WIN11-CLIENT01%20Compliance%20Restored.png)
+![WIN11-CLIENT01 Compliance Restored](../Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/53-WIN11-CLIENT01%20Compliance%20Restored.png)
 
 *Figure 5 — WIN11-CLIENT01 returned to a compliant state.*
 
@@ -112,7 +112,7 @@ The policy returned to:
 
 **Report-only: Success**
 
-![Conditional Access Compliance Restored](./03%20-%20Noncompliant%20Test/54-Conditional%20Access%20Compliance%20Restored.png)
+![Conditional Access Compliance Restored](../Screenshots/07%20-%20Conditional%20Access/03%20-%20Noncompliant%20Test/54-Conditional%20Access%20Compliance%20Restored.png)
 
 *Figure 6 — Conditional Access returned to a successful result after device compliance was restored.*
 

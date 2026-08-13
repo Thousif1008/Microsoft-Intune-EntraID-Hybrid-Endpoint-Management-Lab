@@ -32,7 +32,7 @@ The Managed Google Play setup page showed:
 
 The page showed the Managed Google Play setup required for Android Enterprise enrollment.
 
-![Managed Google Play Setup](./01%20-%20Enrollment/62-Managed%20Google%20Play%20Setup.png)
+![Managed Google Play Setup](/Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/62-Managed%20Google%20Play%20Setup.png)
 
 *Figure 1 — Managed Google Play setup for Android Enterprise enrollment.*
 
@@ -42,7 +42,7 @@ I reviewed the enrollment settings for personally owned Android devices with a W
 
 I used the Android Enterprise Work Profile model so the work and personal sides of the device stayed separate.
 
-![Android Enterprise Enrollment Options](./01%20-%20Enrollment/63-Android%20Enterprise%20Enrollment%20Options.png)
+![Android Enterprise Enrollment Options](/Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/63-Android%20Enterprise%20Enrollment%20Options.png)
 
 *Figure 2 — Android Enterprise personally owned Work Profile enrollment settings.*
 
@@ -60,7 +60,7 @@ The device displayed:
 
 **You're all set!**
 
-![ThousifLab Android Access Setup](./01%20-%20Enrollment/64-Thousiflab%20Android%20Access%20Setup.png)
+![ThousifLab Android Access Setup](/Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/64-ThousifLab%20Android%20Access%20Setup.png)
 
 *Figure 3 — Android Work Profile successfully created and activated.*
 
@@ -79,7 +79,7 @@ The device was shown with:
 - Manufacturer: OnePlus
 - Model: CPH2447
 
-![Android Device Enrolled in Intune](./01%20-%20Enrollment/65-Android%20Device%20Enrolled%20in%20Intune.png)
+![Android Device Enrolled in Intune](/Screenshots/09%20-%20Android%20Device%20Management/01%20-%20Enrollment/65-Android%20Device%20Enrolled%20in%20Intune.png)
 
 *Figure 4 — Personally owned Android Work Profile device enrolled and visible in Intune.*
 
@@ -108,7 +108,7 @@ The configured settings included:
 - Search work contacts from personal profile: Block
 - Camera: Not configured
 
-![Android Work Profile General Settings](./02%20-%20Configuration/66-Android%20Work%20Profile%20General%20Settings.png)
+![Android Work Profile General Settings](/Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/66-Android%20Work%20Profile%20General%20Settings.png)
 
 *Figure 5 — General Work Profile restrictions and separation settings.*
 
@@ -129,7 +129,7 @@ The configured settings included:
 - Smart Lock and other trust agents: Not configured
 - One lock for device and Work Profile: Not configured
 
-![Android Work Profile Password Settings](./02%20-%20Configuration/67-Android Work Profile Password Settings.png)
+![Android Work Profile Password Settings](/Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/67-Android%20Work%20Profile%20Password%20Settings.png)
 
 *Figure 6 — Work Profile password and lock settings.*
 
@@ -144,7 +144,7 @@ The visible settings included:
 - Always-on VPN: Not configured
 - Lockdown mode: Not configured
 
-![Android Personal Profile and System Security](./02%20-%20Configuration/68-Android Personal Profile and System Security.png)
+![Android Personal Profile and System Security](/Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/68-Android%20Personal%20Profile%20and%20System%20Security.png)
 
 *Figure 7 — Application and system security restrictions.*
 
@@ -156,7 +156,7 @@ The completed profile was named:
 
 The platform was Android Enterprise and the profile type was Device restrictions.
 
-![Android Work Profile Policy Review](./02%20-%20Configuration/69-Android Work Profile Policy Review.png)
+![Android Work Profile Policy Review](/Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/69-Android%20Work%20Profile%20Policy%20Review.png)
 
 *Figure 8 — Final review of the Android Work Profile security policy.*
 
@@ -168,7 +168,7 @@ The settings shown in the report had a status of:
 
 **Succeeded**
 
-![Android Work Profile Policy Applied](./02%20-%20Configuration/70-Android Work Profile Policy Applied.png)
+![Android Work Profile Policy Applied](/Screenshots/09%20-%20Android%20Device%20Management/02%20-%20Configuration/70-Android%20Work%20Profile%20Policy%20Applied.png)
 
 *Figure 9 — Work Profile policy settings applied to the Android device.*
 
@@ -197,7 +197,7 @@ The configured settings included:
 - Play Integrity Verdict: Not configured
 - Minimum OS version: 12
 
-![Android Compliance Device Health and Play Protect](./03%20-%20Compliance/71-Android Compliance Device Health and Play Protect.png)
+![Android Compliance Device Health and Play Protect](/Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/71-Android%20Compliance%20Device%20Health%20and%20Play%20Protect.png)
 
 *Figure 10 — Android device health and Google Play Protect requirements.*
 
@@ -211,7 +211,7 @@ The policy also required:
 - Block USB debugging on device: Block
 - Require a password to unlock mobile devices: Require
 
-![Android Compliance Device Security](./03%20-%20Compliance/72-Android Compliance Device Security.png)
+![Android Compliance Device Security](/Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/72-Android%20Compliance%20Device%20Security.png)
 
 *Figure 11 — Android system security and encryption requirements.*
 
@@ -223,7 +223,7 @@ For Android 12 and later, the policy required:
 
 The Work Profile also required a password to unlock it.
 
-![Android Compliance Password Settings](./03%20-%20Compliance/73-Android Compliance Password Settings.png)
+![Android Compliance Password Settings](/Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/73-Android%20Compliance%20Password%20Settings.png)
 
 *Figure 12 — Android compliance password requirements.*
 
@@ -235,7 +235,7 @@ The compliance policy review showed:
 
 with the personally owned Work Profile configuration and the selected security requirements.
 
-![Android Compliance Policy Review](./03%20-%20Compliance/74-Android Compliance Policy Review.png)
+![Android Compliance Policy Review](/Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/74-Android%20Compliance%20Policy%20Review.png)
 
 *Figure 13 — Final review of the Android compliance policy.*
 
@@ -255,7 +255,7 @@ The report showed compliant results for:
 - Security provider
 - Encryption
 
-![Android Compliance Status](./03%20-%20Compliance/75-Android Compliance Status.png)
+![Android Compliance Status](/Screenshots/09%20-%20Android%20Device%20Management/03%20-%20Compliance/75-Android%20Compliance%20Status.png)
 
 *Figure 14 — Android Work Profile device reporting compliant for the configured requirements.*
 
@@ -287,7 +287,7 @@ The policy details showed:
 - Device platform: Android
 - Client apps: 1 included
 
-![Android Conditional Access Policy Review](./04%20-%20Conditional%20Access/76-Android Conditional Access Policy Review.png)
+![Android Conditional Access Policy Review](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/76-Android%20Conditional%20Access%20Policy%20Review.png)
 
 *Figure 15 — CA-Android-Require-Compliant-Device configured for Android device compliance.*
 
@@ -303,7 +303,7 @@ The grant control shown was:
 
 `RequireCompliantDevice`
 
-![Conditional Access Report-Only Success](./04%20-%20Conditional%20Access/80-Conditional-Access-Report-Only-Success.png)
+![Conditional Access Report-Only Success](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/80-Conditional-Access-Report-Only-Success.png)
 
 *Figure 16 — Android Conditional Access policy evaluated successfully in Report-only mode.*
 
@@ -313,7 +313,7 @@ After the Report-only test, I enabled the policy for enforcement.
 
 A compliant Android sign-in continued to succeed.
 
-![Conditional Access Enforced Success](./04%20-%20Conditional%20Access/81-Conditional-Access-Enforced-Success.png)
+![Conditional Access Enforced Success](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/81-Conditional-Access-Enforced-Success.png)
 
 *Figure 17 — Enforced Conditional Access allowed access while the device was compliant.*
 
@@ -336,7 +336,7 @@ The compliance report then showed:
 - Others: 0
 - Total: 1
 
-![Android Device Noncompliant](./04%20-%20Conditional%20Access/82-Android-Device-Noncompliant.png)
+![Android Device Noncompliant](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/82-Android-Device-Noncompliant.png)
 
 *Figure 18 — Android device deliberately placed into a noncompliant state for testing.*
 
@@ -352,7 +352,7 @@ The grant control remained:
 
 `RequireCompliantDevice`
 
-![Conditional Access Noncompliant Blocked](./04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
+![Conditional Access Noncompliant Blocked](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/83-Conditional-Access-Noncompliant-Blocked.png)
 
 *Figure 19 — Conditional Access returned a failure because the Android device was noncompliant.*
 
@@ -362,7 +362,7 @@ The message specifically required:
 
 **Update your operating system to 17 or later.**
 
-![Android Conditional Access Blocked User Message](./04%20-%20Conditional%20Access/84-Android-Conditional-Access-Blocked-User-Message.png)
+![Android Conditional Access Blocked User Message](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/84-Android-Conditional-Access-Blocked-User-Message.png)
 
 *Figure 20 — Android user-facing access block caused by the noncompliant device state.*
 
@@ -379,7 +379,7 @@ The compliance report showed:
 - Others: 0
 - Total: 1
 
-![Conditional Access Access Restored](./04%20-%20Conditional%20Access/85-Conditional-Access-Access-Restored.png)
+![Conditional Access Access Restored](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/85-Conditional-Access-Access-Restored.png)
 
 *Figure 21 — Android compliance restored after the temporary test change was rolled back.*
 
@@ -387,7 +387,7 @@ I then tested a fresh sign-in and Conditional Access returned:
 
 **Success**
 
-![Conditional Access Access Restored Success](./04%20-%20Conditional%20Access/86-Conditional-Access-Access-Restored-Success.png)
+![Conditional Access Access Restored Success](/Screenshots/09%20-%20Android%20Device%20Management/04%20-%20Conditional%20Access/86-Conditional-Access-Access-Restored-Success.png)
 
 *Figure 22 — Conditional Access allowed access again after compliance was restored.*
 
@@ -403,7 +403,7 @@ Microsoft Outlook was added as a Managed Google Play application.
 
 The application was configured for Android as a client app.
 
-![Android Outlook Managed Google Play App Information](./05%20-%20Application Management/77-Android Outlook Managed Google Play App Information.png)
+![Android Outlook Managed Google Play App Information](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/77-Android%20Outlook%20Managed%20Google%20Play%20App%20Information.png)
 
 *Figure 23 — Microsoft Outlook configured as a Managed Google Play Android application.*
 
@@ -415,7 +415,7 @@ to:
 
 `GRP-Intune-Users`
 
-![Android Outlook Required Assignment](./05%20-%20Application Management/78-Android Outlook Required Assignment.png)
+![Android Outlook Required Assignment](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/78-Android%20Outlook%20Required%20Assignment.png)
 
 *Figure 24 — Outlook assigned as a Required application to GRP-Intune-Users.*
 
@@ -433,7 +433,7 @@ The status was:
 
 **Installed**
 
-![Android Outlook Installation Status](./05%20-%20Application Management/79-Android Outlook Installation Status.png)
+![Android Outlook Installation Status](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/79-Android%20Outlook%20Installation%20Status.png)
 
 *Figure 25 — Intune reporting Microsoft Outlook as installed on the Android device.*
 
@@ -452,11 +452,11 @@ All were shown with:
 
 **Installation status:** Installed
 
-![Android Managed Apps Outlook Edge Installed](./05%20-%20Application Management/87-Android-Managed-Apps-Outlook-Edge-Installed.png)
+![Android Managed Apps Outlook Edge Installed](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/87-Android-Managed-Apps-Outlook-Edge-Installed.png)
 
 *Figure 26 — Outlook and Edge shown as installed managed applications.*
 
-![Android Managed Apps All Required Installed](./05%20-%20Application Management/88-Android-Managed-Apps-All-Required-Installed.png)
+![Android Managed Apps All Required Installed](/Screenshots/09%20-%20Android%20Device%20Management/05%20-%20Application%20Management/88-Android-Managed-Apps-All-Required-Installed.png)
 
 *Figure 27 — All required managed Android applications shown as installed.*
 
@@ -499,11 +499,11 @@ The main data-protection controls included:
 - Encrypt org data: Require
 - Encrypt org data on enrolled devices: Require
 
-![Android APP Data Protection Data Transfer](./06%20-%20App Protection/89-Android-APP-Data-Protection-Data-Transfer.png)
+![Android APP Data Protection Data Transfer](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/89-Android-APP-Data-Protection-Data-Transfer.png)
 
 *Figure 28 — Android App Protection data-transfer and organizational-data controls.*
 
-![Android APP Data Protection Encryption](./06%20-%20App Protection/90-Android-APP-Data-Protection-Encryption.png)
+![Android APP Data Protection Encryption](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/90-Android-APP-Data-Protection-Encryption.png)
 
 *Figure 29 — Organizational data encryption requirements.*
 
@@ -517,7 +517,7 @@ The functionality settings included:
 - Org data notifications: Allow
 - Start Microsoft Tunnel connection on app-launch: No
 
-![Android APP Data Protection Functionality](./06%20-%20App Protection/91-Android-APP-Data-Protection-Functionality.png)
+![Android APP Data Protection Functionality](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/91-Android-APP-Data-Protection-Functionality.png)
 
 *Figure 30 — Additional App Protection functionality and data-leakage controls.*
 
@@ -540,7 +540,7 @@ The settings included:
 - Number of days: 90
 - Previous PIN values maintained: 3
 
-![Android APP Access Requirements PIN](./06%20-%20App Protection/92-Android-APP-Access-Requirements-PIN.png)
+![Android APP Access Requirements PIN](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/92-Android-APP-Access-Requirements-PIN.png)
 
 *Figure 31 — App PIN and biometric access requirements.*
 
@@ -550,7 +550,7 @@ The policy also required:
 - Work or school account credentials for access: Require
 - Recheck access requirements after: 30 minutes of inactivity
 
-![Android APP Access Requirements Credentials](./06%20-%20App Protection/93-Android-APP-Access-Requirements-Credentials.png)
+![Android APP Access Requirements Credentials](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/93-Android-APP-Access-Requirements-Credentials.png)
 
 *Figure 32 — Additional application access and credential requirements.*
 
@@ -564,7 +564,7 @@ The conditional launch settings were:
 - Jailbroken/rooted devices: Block access
 - Samsung Knox device attestation: Block access on supported devices
 
-![Android APP Conditional Launch](./06%20-%20App Protection/94-Android-APP-Conditional-Launch.png)
+![Android APP Conditional Launch](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/94-Android-APP-Conditional-Launch.png)
 
 *Figure 33 — Conditional launch actions for protected Android apps.*
 
@@ -580,7 +580,7 @@ with:
 - Management type: All app types
 - Public apps: Microsoft Edge and Microsoft Outlook
 
-![Android APP Policy Review](./06%20-%20App Protection/95-Android-APP-Policy-Review.png)
+![Android APP Policy Review](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/95-Android-APP-Policy-Review.png)
 
 *Figure 34 — Final review of the Android App Protection policy.*
 
@@ -595,7 +595,7 @@ The Android screen showed:
 - Everything's up-to-date
 - Device is healthy
 
-![Android APP Outlook Protection Activated](./06%20-%20App Protection/96-Android-APP-Outlook-Protection-Activated.png)
+![Android APP Outlook Protection Activated](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/96-Android-APP-Outlook-Protection-Activated.png)
 
 *Figure 35 — Outlook showing that the protected work account and device passed the App Protection checks.*
 
@@ -605,7 +605,7 @@ I tested the App Protection settings using a protected Outlook session.
 
 Corporate content was copied from the protected Microsoft application.
 
-![Android APP Outlook Corporate Data Copied](./06%20-%20App Protection/97-Android-APP-Outlook-Corporate-Data-Copied.png)
+![Android APP Outlook Corporate Data Copied](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/97-Android-APP-Outlook-Corporate-Data-Copied.png)
 
 *Figure 36 — Corporate content copied from the protected Outlook environment.*
 
@@ -615,7 +615,7 @@ The Android device displayed:
 
 **Your organization's data cannot be pasted here.**
 
-![Android APP Unmanaged App Data Transfer Blocked](./06%20-%20App Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
+![Android APP Unmanaged App Data Transfer Blocked](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/98-Android-APP-Unmanaged-App-Data-Transfer-Blocked.png)
 
 *Figure 37 — App Protection blocking protected organizational data from being pasted into an unmanaged app.*
 
@@ -623,7 +623,7 @@ I also tested the same type of corporate data between managed applications.
 
 The managed-app transfer succeeded.
 
-![Android APP Managed App Data Transfer Allowed](./06%20-%20App Protection/99-Android-APP-Managed-App-Data-Transfer-Allowed.png)
+![Android APP Managed App Data Transfer Allowed](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/99-Android-APP-Managed-App-Data-Transfer-Allowed.png)
 
 *Figure 38 — Protected data transfer working between managed applications.*
 
@@ -645,7 +645,7 @@ and prompted:
 
 **Enter your PIN**
 
-![Android APP App PIN Access Control](./06%20-%20App Protection/100-Android-APP-App-PIN-Access-Control.png)
+![Android APP App PIN Access Control](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/100-Android-APP-App-PIN-Access-Control.png)
 
 *Figure 39 — App Protection requiring the configured application PIN.*
 
@@ -660,7 +660,7 @@ The policy had:
 - Microsoft Edge: 1 check-in
 - Microsoft Outlook: 1 check-in
 
-![Android APP Intune Policy User Check-In](./06%20-%20App Protection/101-Android-APP-Intune-Policy-User-Check-In.png)
+![Android APP Intune Policy User Check-In](/Screenshots/09%20-%20Android%20Device%20Management/06%20-%20App%20Protection/101-Android-APP-Intune-Policy-User-Check-In.png)
 
 *Figure 40 — Intune App Protection policy showing check-ins from Edge and Outlook.*
 

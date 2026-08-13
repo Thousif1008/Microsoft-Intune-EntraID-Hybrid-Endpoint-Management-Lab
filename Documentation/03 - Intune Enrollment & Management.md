@@ -22,7 +22,7 @@ The Intune tenant status showed:
 
 At this stage there were no enrolled devices because the Windows client had not completed Intune enrollment yet.
 
-![Intune Tenant Status](./01%20-%20MDM%20Auto%20Enrollment/04%20-%20Intune%20Tenant%20Status%20Active%281%29.png)
+![Intune Tenant Status](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/01%20-%20MDM%20Auto%20Enrollment/04%20-%20Intune%20Tenant%20Status%20Active.png)
 
 *Figure 1 — Intune tenant status showing Microsoft Intune as the MDM authority.*
 
@@ -32,14 +32,14 @@ The configuration used a limited user scope rather than applying enrollment to e
 
 The MDM endpoints were also present:
 
-- **MDM terms of use URL:** `https://portal.manage.microsoft.com/TermsofUse.aspx`
-- **MDM discovery URL:** `https://enrollment.manage.microsoft.com/enrollmentserver/discovery.svc`
+- **MDM terms of use URL:** `https:portal.manage.microsoft.comTermsofUse.aspx`
+- **MDM discovery URL:** `https:enrollment.manage.microsoft.comenrollmentserverdiscovery.svc`
 - **Disable MDM enrollment when adding a work or school account on Windows:** No
-- **MDM compliance URL:** `https://portal.manage.microsoft.com/?portalAction=Compliance`
+- **MDM compliance URL:** `https:portal.manage.microsoft.com?portalAction=Compliance`
 
 Windows Information Protection was not being used here, with the WIP user scope set to **None**.
 
-![Intune Automatic Enrollment](./01%20-%20MDM%20Auto%20Enrollment/06-%20Intune%20Automatic%20Enrollment%281%29.png)
+![Intune Automatic Enrollment](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/01%20-%20MDM%20Auto%20Enrollment/06%20-%20Intune%20Automatic%20Enrollment.png)
 
 *Figure 2 — Intune automatic MDM enrollment configuration.*
 
@@ -51,7 +51,7 @@ The Group Policy Management Editor showed:
 
 The separate **Disable MDM Enrollment** setting remained **Not configured**.
 
-![GPO Intune Auto Enrollment](./01%20-%20MDM%20Auto%20Enrollment/21-GPO%20Intune%20Auto%20Enrollment%281%29.png)
+![GPO Intune Auto Enrollment](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/01%20-%20MDM%20Auto%20Enrollment/21-GPO%20Intune%20Auto%20Enrollment.png)
 
 *Figure 3 — Group Policy configured to enable automatic MDM enrollment.*
 
@@ -62,7 +62,7 @@ The screenshot folder structure for this stage was also captured and shows the f
 - Device Management
 - MDM Verification
 
-![Intune Enrollment Management Folder Structure](./01%20-%20MDM%20Auto%20Enrollment/db6bf2a8-1d8d-4a53-a379-40178b55ef0d.png)
+![Intune Enrollment Group](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/02%20-%20Intune%20Enrollment/18-Intune%20Enrollment%20Group.png)
 
 *Figure 4 — Screenshot structure used for the Intune Enrollment & Management stage.*
 
@@ -79,7 +79,7 @@ The account was **Arjun Reddy**, and the license page showed:
 
 Both licenses were assigned directly to the user.
 
-![Arjun Reddy Intune License](./02%20-%20Intune%20Enrollment/19-Intune%20User%20License%281%29.png)
+![Arjun Reddy Intune License](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/02%20-%20Intune%20Enrollment/19-Intune%20User%20License.png)
 
 *Figure 5 — Arjun Reddy had active Intune and Azure AD Premium P1 licenses.*
 
@@ -94,7 +94,7 @@ The screenshot still showed Arjun Reddy with the earlier UPN:
 
 This screenshot was taken before the UPN was changed to the Microsoft Entra namespace used later in the synchronization and SSO stages.
 
-![Intune Enrollment Group](./02%20-%20Intune%20Enrollment/18-Intune%20Enrollment%20Group%281%29.png)
+![Intune Enrollment Group](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/02%20-%20Intune%20Enrollment/18-Intune%20Enrollment%20Group.png)
 
 *Figure 6 — `GRP-Intune-Users` containing Ahmed Khan and Arjun Reddy.*
 
@@ -102,7 +102,7 @@ The Windows client was then checked before Intune enrollment.
 
 The signed-in user was **Arjun Reddy**, while the machine was still connected to the on-premises `THOUSIFLAB` AD domain. There was no separate Intune management connection shown yet.
 
-![Windows Pre Intune Enrollment](./02%20-%20Intune%20Enrollment/20-Windows%20Pre%20Intune%20Enrollment%281%29.png)
+![Windows Pre Intune Enrollment](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/02%20-%20Intune%20Enrollment/20-Windows%20Pre%20Intune%20Enrollment.png)
 
 *Figure 7 — Windows client state before Intune enrollment.*
 
@@ -110,7 +110,7 @@ The enrollment process was then triggered from Windows through the Enterprise Ma
 
 The `PushLaunch` task was shown running successfully and was used to trigger the enrollment activity.
 
-![Intune PushLaunch Success](./02%20-%20Intune%20Enrollment/28-Intune%20PushLaunch%20Success%281%29.png)
+![Intune PushLaunch Success](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/02%20-%20Intune%20Enrollment/28-Intune%20PushLaunch%20Success.png)
 
 *Figure 8 — `PushLaunch` task completing successfully during the Intune enrollment process.*
 
@@ -135,7 +135,7 @@ The Intune device view showed:
 
 The device also had a recorded last check-in time.
 
-![Intune Client Device](./03%20-%20Device%20Management/30-Intune%20Client%20Device%281%29.png)
+![Intune Client Device](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/30-Intune%20Client%20Device.png)
 
 *Figure 9 — `WIN11-CLIENT01` appearing in Intune as a corporate, compliant device managed by Intune.*
 
@@ -153,7 +153,7 @@ with the recorded sync time:
 
 `08-08-2026 23:26:02`
 
-![Windows Intune Managed Sync Success](./03%20-%20Device%20Management/29-Windows%20Intune%20Managed%20Sync%20Success%281%29.png)
+![Windows Intune Managed Sync Success](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/03%20-%20Device%20Management/29-Windows%20Intune%20Managed%20Sync%20Success.png)
 
 *Figure 10 — Windows showing that the device was managed by Thousiflab and the Intune device sync completed successfully.*
 
@@ -166,7 +166,7 @@ At this point the client was being actively managed through Intune rather than o
 The final verification was performed from the Windows client with:
 
 ```cmd
-dsregcmd /status
+dsregcmd status
 ```
 
 The SSO section showed:
@@ -205,9 +205,9 @@ HostNameUpdated    : YES
 
 The displayed name and OS version were reported as managed by MDM, and the host name update was also confirmed.
 
-![DSREGCMD MDM Verification](./04%20-%20MDM%20Verification/33-DSREGCMD%20MDM%20Verification%281%29.png)
+![DSREGCMD MDM Verification](../Screenshots/03%20-%20Intune%20Enrollment%20%26%20Management/04%20-%20MDM%20Verification/33-DSREGCMD%20MDM%20Verification.png)
 
-*Figure 11 — `dsregcmd /status` confirming the Azure AD PRT and MDM-related device updates.*
+*Figure 11 — `dsregcmd status` confirming the Azure AD PRT and MDM-related device updates.*
 
 ---
 
@@ -237,7 +237,7 @@ The Intune enrollment and management process was:
 
 → Windows reported a successful Intune management sync
 
-→ `dsregcmd /status` confirmed `AzureAdPrt : YES`
+→ `dsregcmd status` confirmed `AzureAdPrt : YES`
 
 → `KeySignTest : PASSED`
 

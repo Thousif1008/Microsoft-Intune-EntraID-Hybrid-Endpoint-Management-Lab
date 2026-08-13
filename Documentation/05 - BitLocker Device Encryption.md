@@ -24,7 +24,7 @@ The C: drive was shown as:
 
 There was also a **Turn on BitLocker** option available.
 
-![BitLocker Before Encryption](./01%20-%20Before%20Encryption/37-bitlocker-before-encryption%283%29.png)
+![BitLocker Before Encryption](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/01%20-%20Before%20Encryption/37-bitlocker-before-encryption.png)
 
 *Figure 1 — BitLocker was still disabled on the C: drive before the encryption setup.*
 
@@ -52,7 +52,7 @@ The policy contained **21 settings** and was assigned to:
 
 The assignment was active and the target type was **Include**.
 
-![BitLocker Policy Review](./02%20-%20BitLocker%20Policy/38-BitLocker%20Policy%20Review%281%29.png)
+![BitLocker Policy Review](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/02%20-%20BitLocker%20Policy/38-BitLocker%20Policy%20Review.png)
 
 *Figure 2 — WIN11-BitLocker-Policy configured in Intune and assigned to GRP-Intune-Users.*
 
@@ -79,7 +79,7 @@ The assignment status was:
 
 **Success**
 
-![BitLocker Policy Success](./02%20-%20BitLocker%20Policy/42-Intune%20BitLocker%20Policy%20Success%281%29.png)
+![BitLocker Policy Success](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/02%20-%20BitLocker%20Policy/42-Intune%20BitLocker%20Policy%20Success.png)
 
 *Figure 3 — Intune confirmed that the BitLocker policy was applied to WIN11-CLIENT01.*
 
@@ -99,7 +99,7 @@ The command returned a TPM protector with a protector ID and PCR validation prof
 
 The output also showed that the TPM protector used Secure Boot for integrity validation.
 
-![BitLocker TPM Protector Added](./03%20-%20TPM%20Protector/39-BitLocker%20TPM%20Protector%20Added%281%29.png)
+![BitLocker TPM Protector Added](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/03%20-%20TPM%20Protector/39-BitLocker%20TPM%20Protector%20Added.png)
 
 *Figure 4 — TPM protector added to the C: drive.*
 
@@ -140,7 +140,7 @@ The resulting status showed:
 - **Lock Status:** Unlocked
 - **Key Protectors:** TPM, Numerical Password
 
-![BitLocker Final Status](./04%20-%20Encryption%20%26%20Protection/40-BitLocker%20Final%20Status%281%29.png)
+![BitLocker Final Status](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/04%20-%20Encryption%20%26%20Protection/40-BitLocker%20Final%20Status.png)
 
 *Figure 5 — C: drive fully encrypted with BitLocker and protection enabled.*
 
@@ -168,7 +168,7 @@ The recovery key entry showed:
 
 The actual recovery key value is masked in the screenshot.
 
-![BitLocker Recovery Key](./05%20-%20Recovery%20Key/41-BitLocker%20Recovery%20Key%20Intune%281%29.png)
+![BitLocker Recovery Key](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/05%20-%20Recovery%20Key/41-BitLocker%20Recovery%20Key%20Intune.png)
 
 *Figure 6 — BitLocker recovery key information stored in Intune for WIN11-CLIENT01.*
 
@@ -194,7 +194,7 @@ A message at the top stated:
 
 **For your security, some settings are managed by your system administrator.**
 
-![BitLocker Control Panel On](./06%20-%20Final%20Verification/43-BitLocker%20Control%20Panel%20On%281%29.png)
+![BitLocker Control Panel On](../Screenshots/05%20-%20BitLocker%20Device%20Encryption/06%20-%20Final%20Verification/43-BitLocker%20Control%20Panel%20On.png)
 
 *Figure 7 — Final BitLocker state showing the C: drive encrypted and protected.*
 

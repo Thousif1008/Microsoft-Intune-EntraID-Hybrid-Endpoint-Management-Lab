@@ -28,7 +28,7 @@ The assignment showed `GRP-Intune-Users` as the included group.
 
 The assignment was active and no filter was applied.
 
-![WIN11 Endpoint Security Policy](./01%20-%20Endpoint%20Security%20Policy/31-Intune%20Endpoint%20Security%20Policy%281%29.png)
+![WIN11 Endpoint Security Policy](../Screenshots/04%20-%20Endpoint%20Security%20%26%20Firewall/01%20-%20Endpoint%20Security%20Policy/31-Intune%20Endpoint%20Security%20Policy.png)
 
 *Figure 1 — WIN11-Endpoint-Security policy with GRP-Intune-Users included in the assignment.*
 
@@ -49,7 +49,7 @@ The Microsoft Edge SmartScreen settings shown in the policy were:
 - **Configure Microsoft Defender SmartScreen:** Enabled
 - **Prevent bypassing of Microsoft Defender SmartScreen warnings about downloads:** Enabled
 
-![Endpoint Security Policy Configuration](./01%20-%20Endpoint%20Security%20Policy/32-Intune%20Firewall%20Policy%20Configuration%20Settings%281%29.png)
+![Endpoint Security Policy Configuration](../Screenshots/04%20-%20Endpoint%20Security%20%26%20Firewall/01%20-%20Endpoint%20Security%20Policy/32-Intune%20Firewall%20Policy%20Configuration%20Settings.png)
 
 *Figure 2 — Configuration settings included in the endpoint security policy.*
 
@@ -67,7 +67,7 @@ The Windows Security **Firewall & network protection** page showed:
 
 The Domain network was the active network profile.
 
-![Windows Firewall Policy Applied](./02%20-%20Firewall%20Configuration/34-Windows%20Firewall%20Policy%20Applied%281%29.png)
+![Windows Firewall Policy Applied](../Screenshots/04%20-%20Endpoint%20Security%20%26%20Firewall/02%20-%20Firewall%20Configuration/34-Windows%20Firewall%20Policy%20Applied.png)
 
 *Figure 3 — Windows Firewall showing the Domain, Private and Public network firewalls enabled.*
 
@@ -100,7 +100,7 @@ The assignment status was:
 
 **Success**
 
-![Intune Endpoint Security Assignment Success](./03%20-%20Policy%20Assignment/35-Intune%20Endpoint%20Security%20Assignment%20Success%281%29.png)
+![Intune Endpoint Security Assignment Success](../Screenshots/04%20-%20Endpoint%20Security%20%26%20Firewall/03%20-%20Policy%20Assignment/35-Intune%20Endpoint%20Security%20Assignment%20Success.png)
 
 *Figure 4 — WIN11-Endpoint-Security applied to WIN11-CLIENT01.*
 
@@ -139,7 +139,7 @@ UnicastResponseToMulticast Enable
 The local firewall rules and local security rules were shown as:
 
 ```text
-N/A (GPO-store only)
+NA (GPO-store only)
 ```
 
 The command completed and returned:
@@ -148,7 +148,7 @@ The command completed and returned:
 Ok.
 ```
 
-![Domain Firewall Policy Applied](./04%20-%20Firewall%20Verification/36-Domain%20Firewall%20Policy%20Applied%281%29.png)
+![Domain Firewall Policy Applied](../Screenshots/04%20-%20Endpoint%20Security%20%26%20Firewall/04%20-%20Firewall%20Verification/36-Domain%20Firewall%20Policy%20Applied.png)
 
 *Figure 5 — Domain Firewall profile verified from Command Prompt with netsh.*
 

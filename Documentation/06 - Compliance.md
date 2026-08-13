@@ -20,7 +20,7 @@ Under **Device Health**, the Microsoft Attestation Service settings showed:
 - **Secure Boot:** Require
 - **Code integrity:** Not configured
 
-![Device Health Compliance Requirements](./01%20-%20Compliance%20Policy/45-Device%20Health%20Compliance%20Requirements.png)
+![Device Health Compliance Requirements](../Screenshots/06%20-%20Compliance/01%20-%20Compliance%20Policy/45-Device%20Health%20Compliance%20Requirements.png)
 
 *Figure 1 — Device Health requirements configured for BitLocker and Secure Boot.*
 
@@ -33,7 +33,7 @@ The policy also included device security requirements:
 - **Antispyware:** Not configured
 - **Microsoft Defender Antimalware:** Not configured
 
-![Defender Firewall Compliance Requirement](./01%20-%20Compliance%20Policy/46-Defender%20Firewall%20Compliance%20Requirement.png)
+![Defender Firewall Compliance Requirement](../Screenshots/06%20-%20Compliance/01%20-%20Compliance%20Policy/46-Defender%20Firewall%20Compliance%20Requirement.png)
 
 *Figure 2 — Firewall required as part of the compliance policy.*
 
@@ -43,7 +43,7 @@ The policy appeared in the Intune compliance policy list as:
 
 The platform was **Windows 10 and later**, and the policy type was **Windows 10/11 compliance policy**.
 
-![Compliance Policy Created](./01%20-%20Compliance%20Policy/48-Compliance%20Policy%20Created.png)
+![Compliance Policy Created](../Screenshots/06%20-%20Compliance/01%20-%20Compliance%20Policy/48-Compliance%20Policy%20Created.png)
 
 *Figure 3 — WIN11-Compliance-Policy created in Intune.*
 
@@ -62,7 +62,7 @@ The group was shown as active and contained:
 
 No filter was applied to the assignment.
 
-![Compliance Policy Assignment](./02%20-%20Assignment/47-Compliance%20Policy%20Assignment.png)
+![Compliance Policy Assignment](../Screenshots/06%20-%20Compliance/02%20-%20Assignment/47-Compliance%20Policy%20Assignment.png)
 
 *Figure 4 — WIN11-Compliance-Policy assigned to GRP-Intune-Users.*
 
@@ -93,7 +93,7 @@ The policy compliance result for the device was:
 
 The operating system was shown as Windows.
 
-![WIN11-CLIENT01 Compliance Status](./03%20-%20Compliance%20Verification/48-WIN11-CLIENT01%20Compliance%20Status.png)
+![WIN11-CLIENT01 Compliance Status](../Screenshots/06%20-%20Compliance/03%20-%20Compliance%20Verification/48-WIN11-CLIENT01%20Compliance%20Status.png)
 
 *Figure 5 — WIN11-CLIENT01 reported as compliant with the WIN11-Compliance-Policy.*
 
