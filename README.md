@@ -3481,3 +3481,10 @@ Microsoft Intune & Entra ID Hybrid Endpoint Management Lab/
 
 The README is intended as the quick overview. The individual MD files contain the detailed implementation steps, configuration details and screenshot evidence.
 
+# Acknowledgments
+
+- Microsoft Learn documentation
+- Microsoft Intune
+- Microsoft Entra ID
+- VMware Workstation Pro
+- Android Enterprise and Managed Google Play
