@@ -1,0 +1,33 @@
+# Virtual machines and disks
+*.vmx
+*.vmdk
+*.vmsd
+*.vmsn
+*.vmem
+*.nvram
+
+# Windows and PowerShell logs
+*.log
+*.etl
+*.evtx
+*.tmp
+
+# Archives and exports
+*.zip
+*.7z
+*.rar
+*.iso
+
+# Credentials and secrets
+*.env
+*.pfx
+*.p12
+*.cer
+*.key
+*.pem
+*.csv
+
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
